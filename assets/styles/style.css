@@ -1,0 +1,24 @@
+footer {
+    /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
+    height: 1000px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+svg {
+    height: 400px;
+    width: 3400px;
+}
+#plane {
+    animation: plane 1.5s ease infinite alternate;
+}
+
+@keyframes plane {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(15px);
+    }
+}

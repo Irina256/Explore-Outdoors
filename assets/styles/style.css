@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 footer {
     /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
     height: 1000px;
@@ -5,20 +11,74 @@ footer {
     align-items: flex-end;
     justify-content: center;
 }
-
+/* SVG Height and width */
 svg {
-    height: 400px;
-    width: 3400px;
+    height: 600px;
+    width: 600px;
 }
+
+/* Plane animation */
 #plane {
     animation: plane 1.5s ease infinite alternate;
 }
-
 @keyframes plane {
     from {
         transform: translateY(0px);
     }
     to {
         transform: translateY(15px);
+    }
+}
+/* Leaf animations */
+#right-hand-left-leaf {
+    animation: right-hand-left-leaf 1.5s  1.8s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes right-hand-left-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#right-hand-right-leaf {
+    animation: right-hand-right-leaf 1.5s  .4s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes right-hand-right-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#left-hand-left-leaf {
+    animation: left-hand-left-leaf 1.5s  1s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes left-hand-left-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#left-hand-right-leaf {
+    animation: left-hand-right-leaf 1.5s  .6s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes left-hand-right-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
     }
 }

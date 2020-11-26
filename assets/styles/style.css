@@ -12,10 +12,17 @@ footer {
     justify-content: center;
 }
 /* SVG Height and width */
-svg {
-    height: 600px;
-    width: 600px;
+.plane-svg {
+    height: 300px;
+    width: 300px;
+    position:relative;
 }
+.back-ground-svg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
 
 /* Plane animation */
 #plane {

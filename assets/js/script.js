@@ -189,6 +189,42 @@ var questChoiPoints = [
                 fourthChoice: [5, 2, 3, 1, 3, 4]
             }
         ]
+    },
+    {
+        questions: 'What’s your biggest pet peeve?',
+        choices: [
+            'When your phone hits 1% and you left the charger at home',
+            'Slow walkers',
+            'Lack of exciting things to do',
+            'Large crowds'
+        ],
+        points: [
+            {
+                //points ordered as paris, rome, london, miami, orlando and kauai
+                firstChoice: [4, 3, 4, 4, 4, 1],
+                secondChoice: [2, 3, 3, 1, 1, 5],
+                thirdChoice: [4, 3, 4, 4, 5, 1],
+                fourthChoice: [3, 3, 3, 1, 1, 5]
+            }
+        ]
+    },
+    {
+        questions: 'What is on your bucket list?',
+        choices: [
+            'Experiencing a totally new culture',
+            'Scuba Diving',
+            'Leaving the map at home and completely losing yourself somewhere',
+            'To see ancient structures'
+        ],
+        points: [
+            {
+                //points ordered as paris, rome, london, miami, orlando and kauai
+                firstChoice: [3, 4, 3, 3, 3, 5],
+                secondChoice: [2, 2, 2, 5, 3, 5],
+                thirdChoice: [4, 4, 4, 2, 4, 1],
+                fourthChoice: [4, 5, 3, 1, 1, 2]
+            }
+        ]
     }
 ]
 var preparedQuestion = function () {

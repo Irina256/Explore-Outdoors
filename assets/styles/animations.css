@@ -1,0 +1,197 @@
+/* SVG Height and width (lady with pins will need to be dynamicly removed once start button is clicked */
+.plane-svg, .lady-with-pins {
+    height: 300px;
+    width: 300px;
+    position:relative;
+}
+/* global background svg - do not delete in js */
+.back-ground-svg {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Pin animations */
+#first-circle {
+    opacity: 0;
+    animation: first-circle 5s infinite ;
+}
+@keyframes first-circle {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#first-line {
+    opacity: 0;
+    animation: first-circle 5s .5s infinite ;
+}
+#second-circle {
+    opacity: 0;
+    animation: first-circle 5s 1s infinite ;
+}
+.bottom-pin {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: pins 5s  1s infinite;
+}
+@keyframes pins {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+}
+#bottom-pin-shadow {
+    opacity: 0;
+    animation: shadows 5s 1s infinite;
+}
+@keyframes shadows {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+#second-line {
+    opacity: 0;
+    animation: first-circle 5s  1.5s infinite ;
+}
+
+#third-circle {
+    opacity: 0;
+    animation: first-circle 5s  2s infinite ;
+}
+
+#third-line {
+    opacity: 0;
+    animation: first-circle 5s  2.5s infinite ;
+}
+
+#forth-circle {
+    opacity: 0;
+    animation: first-circle 5s 3s  infinite ;
+}
+
+
+.middle-pin {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: pins 5s  3s infinite;
+}
+#middle-pin-shadow {
+    opacity: 0;
+    animation: shadows 5s 3s infinite;
+}
+#forth-line {
+    opacity: 0;
+    animation: first-circle 5s  3.5s infinite ;
+}
+#fifth-circle {
+    opacity: 0;
+    animation: first-circle 5s  4s infinite ;
+} 
+#fifth-line {
+    opacity: 0;
+    animation: first-circle 5s 4.5s  infinite ;
+}
+#sixth-circle {
+    opacity: 0;
+    animation: first-circle 5s 4.9s  infinite ;
+}
+.top-pin {
+    opacity: 0;
+    transform: translateY(-60px);
+    animation: pins 5s  4.9s infinite;
+}
+#top-pin-shadow {
+    opacity: 0;
+    animation: shadows 5s 4.9s infinite;
+}
+/* End of pin animations */
+
+
+/* Plane animation */
+#plane {
+    animation: plane 1.5s ease infinite alternate;
+}
+@keyframes plane {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+/* Leaf animations */
+#right-hand-left-leaf {
+    animation: right-hand-left-leaf 1.5s  1.8s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes right-hand-left-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#right-hand-right-leaf {
+    animation: right-hand-right-leaf 1.5s  .4s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes right-hand-right-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#left-hand-left-leaf {
+    animation: left-hand-left-leaf 1.5s  1s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes left-hand-left-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+#left-hand-right-leaf {
+    animation: left-hand-right-leaf 1.5s  .6s infinite alternate ;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes left-hand-right-leaf {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(5deg);
+    }
+}
+/* End of leaf animations */

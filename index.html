@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Explore Outdoors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/styles/animations.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 
@@ -14,6 +15,19 @@
 <!-- Header Section -->
 <header>
     <h1 class="header">Explore Outdoors</h1>
+    <!-- columns need to be done with materialize instead of bootstrap,
+    Jasmine please take a look into that-->
+    <div class = "row slide-show" id = "slide-show">
+        <div class = "col-9 image-slider">
+            <img class = "slideShow" name = "slideShow" width = "100%" height = "400px">
+        </div>
+        <div class = "col-3 img-description">
+            <h3 class = "img-city"></h3>
+            <p class = "city-description"></p>
+
+        </div>
+       
+    </div>
 </header>
 
 
@@ -41,7 +55,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
     </script>
-    <script src="/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 <!-- Footer section -->
 <footer>

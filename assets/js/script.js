@@ -7,6 +7,26 @@ var kauaiScore = 0;
 var answerTracker = 0;
 var questionTracker = 0;
 var keptScore = [];
+var cityCounter = 0;
+var imagesSrc = [
+'./assets/images/paris.jpg',
+'./assets/images/rome.jpg',
+'./assets/images/london-big-ben.jpg',
+'./assets/images/miami.png',
+'./assets/images/universal-ball-800x450-1.jpg',
+'./assets/images/kauai.jpg'
+];
+var cityName = [
+    'Paris, France',
+    'Rome, Italy',
+    'London, UK',
+    'Miami, Florida',
+    'Orlando, Florida',
+    'Kauai, Hawaii',
+    ];
+    //need description for each city picture 
+    // it's going to be an array of 6 paragraph
+    var cityDescription = ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, magni eos facilis mollitia corporis magnam at voluptas dignissimos aut vitae voluptatibus quidem dolorum provident quis! Amet provident dolore ut quo.']
 var questChoiPoints = [
     {
         questions: 'What kind of weather do you like?',
@@ -332,3 +352,19 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
             alert('Miami has the high score');
     }
 }
+
+var imageCity = document.querySelector('.img-city');
+var cityDetails = document.querySelector('.city-description');
+var slider = document.querySelector('.slideShow');  
+var slideShow = function(){
+    slider.setAttribute('src',imagesSrc[cityCounter]);
+    imageCity.textContent = cityName[cityCounter];
+    cityDetails.textContent = cityDescription[0];
+    if (cityCounter<imagesSrc.length-1){
+        cityCounter++;
+    }else{
+        cityCounter = 0;
+    }
+    setTimeout('slideShow()',5000);
+}
+window.onload=slideShow;

@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
+    height: 1000px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}

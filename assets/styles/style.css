@@ -11,3 +11,8 @@ footer {
     align-items: flex-end;
     justify-content: center;
 }
+.question-image {
+    height: 300px;
+    width: 300px;
+    position:relative;
+}

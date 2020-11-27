@@ -11,15 +11,8 @@ footer {
     align-items: flex-end;
     justify-content: center;
 }
-/* SVG Height and width (lady with pins will need to be dynamicly removed once start button is clicked */
 .question-image {
     height: 300px;
     width: 300px;
     position:relative;
-}
-/* global background svg - do not delete in js */
-.back-ground-svg {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
 }

@@ -352,7 +352,6 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
             alert('Miami has the high score');
     }
 }
-
 var imageCity = document.querySelector('.img-city');
 var cityDetails = document.querySelector('.city-description');
 var slider = document.querySelector('.slideShow');  

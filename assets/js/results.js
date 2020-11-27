@@ -1,2 +1,2 @@
-
-console.log("Hi, Where would you like to go for your next vacation?");
+var cityAttribute = $('.cityName');
+cityAttribute.setAttribute('data-destination-name',keptScore[highScore]);

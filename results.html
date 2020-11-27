@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Explore Outdoors</title>
     <link rel="stylesheet" href="./assets/styles/animations.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
-<!-- Cities information -->
 
 <body>
+  <div class = "cityName"
+data-locale = "en-US"
+data-currency="USD"
+data-skyscanner-widget="FlightSearchWidget" 
+data-destination-name="'Miami'"      
+  ></div>
+  <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  <script src = './assets/js/results.js'></script>
     <!-- London -->
     <article class="cities" id="London">
 
@@ -516,10 +523,12 @@
                 <clipPath id="clip0">
                     <rect width="1136" height="647.595" fill="white" />
                 </clipPath>
+   
             </defs>
         </svg>
     </div>
 </footer>
+<script src = './assets/js/results.js'></script>
 </body>
 
 </html>

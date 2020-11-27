@@ -261,12 +261,7 @@ var preparedQuestion = function () {
         listItem.className = "value";
         listItem.textContent = questChoiPoints[questionTracker].choices[i];
         listItem.setAttribute("data-answer-id", listItem.textContent);
-        listItem.setAttribute("id", "value" + questionTracker);
-        listItem.style.border = "1px solid #0000FF";
-        listItem.style.padding = "10px 30px 10px 30px";
         listItem.style.display = "block";
-        listItem.style.backgroundColor = "lightslategray";
-        listItem.style.marginBottom = "5px";
         choicesList.appendChild(listItem);
         answers.appendChild(choicesList);
     }

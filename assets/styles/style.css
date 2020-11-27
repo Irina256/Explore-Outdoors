@@ -23,12 +23,18 @@ body {
     background-color: var(--primary);
     color: var(--lightBlue);
     font-family: 'Castoro', serif;
-    text-align: center;
 }
 
 .btn {
     border-radius: 5px;
     font-weight: bolder;
+    background-color: var(--tertiary);
+    margin: 5px 3px;
+}
+
+.btn:hover {
+    background: rgb(15,76,117);
+    background: linear-gradient(90deg, rgba(15,76,117,1) 0%, rgba(50,130,184,1) 51%, rgba(187,225,250,1) 100%);
 }
 
 footer {
@@ -36,4 +42,14 @@ footer {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+    
 }

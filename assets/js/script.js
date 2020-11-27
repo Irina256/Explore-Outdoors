@@ -9,12 +9,12 @@ var questionTracker = 0;
 var keptScore = [];
 var cityCounter = 0;
 var imagesSrc = [
-'./assets/images/paris.jpg',
-'./assets/images/rome.jpg',
-'./assets/images/london-big-ben.jpg',
-'./assets/images/miami.png',
-'./assets/images/universal-ball-800x450-1.jpg',
-'./assets/images/kauai.jpg'
+    './assets/images/paris.jpg',
+    './assets/images/rome.jpg',
+    './assets/images/london-big-ben.jpg',
+    './assets/images/miami.png',
+    './assets/images/universal-ball-800x450-1.jpg',
+    './assets/images/kauai.jpg'
 ];
 var cityName = [
     'Paris, France',
@@ -23,10 +23,10 @@ var cityName = [
     'Miami, Florida',
     'Orlando, Florida',
     'Kauai, Hawaii',
-    ];
-    //need description for each city picture 
-    // it's going to be an array of 6 paragraph
-    var cityDescription = ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, magni eos facilis mollitia corporis magnam at voluptas dignissimos aut vitae voluptatibus quidem dolorum provident quis! Amet provident dolore ut quo.']
+];
+//need description for each city picture 
+// it's going to be an array of 6 paragraph
+var cityDescription = ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, magni eos facilis mollitia corporis magnam at voluptas dignissimos aut vitae voluptatibus quidem dolorum provident quis! Amet provident dolore ut quo.']
 var questChoiPoints = [
     {
         questions: 'What kind of weather do you like?',
@@ -307,7 +307,7 @@ $(document).on('click', '.value', function (e) {
     }
     var eachQuestion = document.querySelector('.eachQuestion');
     var orderedList = document.querySelector('.orderedList');
-    if (questionTracker < questChoiPoints.length - 1){
+    if (questionTracker < questChoiPoints.length - 1) {
         questionTracker++;
         eachQuestion.remove();
         orderedList.remove();
@@ -331,39 +331,37 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
     var highScore = (keptScore.indexOf(Math.max(...keptScore)));
     switch (highScore) {
         case 0:
-            alert('Paris has the high score');
+                window.location.replace('paris.html');
             break;
         case 1:
-            alert('Rome has the high score');
+                window.location.replace('rome.html');
             break;
         case 2:
-            alert('London has the high score');
+                window.location.replace('london.html');
             break;
         case 3:
-            alert('Miami has the high score');
+                window.location.replace('miami.html');
             break;
         case 4:
-            alert('Orlando has the high score');
+                window.location.replace('orlando.html');
             break;
         case 5:
-            alert('Kauai has the high score');
+                window.location.replace('kauai.html');
             break;
-        default:
-            alert('Miami has the high score');
     }
 }
 var imageCity = document.querySelector('.img-city');
 var cityDetails = document.querySelector('.city-description');
-var slider = document.querySelector('.slideShow');  
-var slideShow = function(){
-    slider.setAttribute('src',imagesSrc[cityCounter]);
+var slider = document.querySelector('.slideShow');
+var slideShow = function () {
+    slider.setAttribute('src', imagesSrc[cityCounter]);
     imageCity.textContent = cityName[cityCounter];
     cityDetails.textContent = cityDescription[0];
-    if (cityCounter<imagesSrc.length-1){
+    if (cityCounter < imagesSrc.length - 1) {
         cityCounter++;
-    }else{
+    } else {
         cityCounter = 0;
     }
-    setTimeout('slideShow()',5000);
+    setTimeout('slideShow()', 5000);
 }
-window.onload=slideShow;
+window.onload = slideShow;

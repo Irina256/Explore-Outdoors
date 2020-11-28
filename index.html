@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/animations.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 
@@ -43,7 +44,7 @@
         </div>
     </header>
 
-    <div class="container center-align z-depth-5">
+    <div class="container center-align z-depth-5" data-aos="flip-left">
         <div id="home" class="row">
 
             <div class="col s8 offset-s2 quizTitle">
@@ -220,6 +221,10 @@
             </svg>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
         </script>

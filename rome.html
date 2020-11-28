@@ -10,16 +10,19 @@
 
 
 
-
+<body>
 <div class = "cityName"
 data-locale = "en-US"
 data-currency="USD"
 data-skyscanner-widget="FlightSearchWidget" 
 data-destination-name="'LIRF'"      
   ></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+  </script>
   <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
   <script src = './assets/js/results.js'></script>
-<body>
+  
     <article class="cities" id="Rome">
         <img src="./assets/images/Rome.jpg" width="600" height="400">
         <h3>
@@ -73,6 +76,7 @@ data-destination-name="'LIRF'"
             </ul>
         
     </article>
+
     <!-- This content may need to be hiden or delayed to be shown until DOM content loads in order for a slopply load to not happen -->
     <footer>
         <!-- SVG File (Unfortunatly svgs will look like this) -->

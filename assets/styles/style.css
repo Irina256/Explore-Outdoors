@@ -1,12 +1,131 @@
+:root {
+    --primary: #1b262c;
+    --secondary: #0f4c75;
+    --tertiary: #3282b8;
+    --lightBlue: #bbe1fa;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* Preloader */
+.body-before-load {
+    opacity: 0;
+}
+.preload-finish {
+    opacity: 0;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #77b3d4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cloud1, .cloud2, .cloud3 {
+    height: 100px;
+    position: absolute;
+    right: 0%;
+    z-index: -1;
+}
+.cloud1 {
+    top: 25%;
+    transform: translate(100%, -25%);
+    animation: clouds 3s ease infinite;
+}
+.cloud2 {
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: clouds 3s ease infinite 2s;
+}
+.cloud3 {
+    top: 75%; 
+    transform: translate(100%, -75%);
+    animation: clouds 3s ease infinite 1.5s;
+}
+
+.airplane {
+    height: 200px;
+    animation: airplane 1s ease infinite alternate;
+}
+.preloader h3 {
+    position: absolute;
+    top: 75%;
+    transform: translateY(-75%);
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+@keyframes airplane {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(50px);
+    }
+}
+@keyframes clouds {
+    from {
+        right: 0%;
+    } 
+    to {
+        right: 130%;
+    }
+}
+/* end preloader */
+
+header img {
+    width: 60%;
+    padding: 10px;
+}
+
+.header {
+    font-family: 'Lobster', cursive;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--lightBlue);
+    font-family: 'Castoro', serif;
+}
+
+.container {
+    margin-bottom: 100px;
+    padding-bottom: 15px;
+}
+
+/* button styling */
+.btn,
+.value {
+    color: var(--lightBlue);
+    opacity: 80%;
+    margin-top: 5px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: var(--secondary);
+    transition: all .5s ease-out;
+    background-position: 0 -10px;
+}
+
+.btn:hover,
+.value:hover {
+    background: rgb(80,157,218);
+    background: linear-gradient(180deg, rgba(80,157,218,1) 0%, rgba(86,97,199,1) 35%, rgba(112,133,198,1) 100%);
+    background-position: 1px -25px;
+}
+
+
+/* footer styling */
 
 footer {
-    /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
-    height: 1000px;
+    margin-top: 50px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -16,3 +135,14 @@ footer {
     width: 300px;
     position:relative;
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 575px) {
+
+}
+

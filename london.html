@@ -8,13 +8,9 @@
     <link rel="stylesheet" href="./assets/styles/animations.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
-<div class="cityName" data-locale="en-US" data-currency="USD" data-skyscanner-widget="FlightSearchWidget"
-    data-destination-name="'LCY'"></div>
-<script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-<script src='./assets/js/results.js'></script>
 
 <body>
-    <article class="cities" id="London">
+   <article class="cities" id="London">
 
         <img src="./assets/images/london-big-ben.jpg" width="600" height="400">
         <h3>
@@ -61,7 +57,20 @@
                 theatre admissions and over 70% of box-office revenues</li>
         </ul>
     </article>
+<div class = "cityName"
+data-locale = "en-US"
+data-currency="USD"
+data-skyscanner-widget="FlightSearchWidget" 
+data-destination-name="'LCY'"      
+  ></div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+  </script>
+  <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
+  <script src = './assets/js/results.js'></script>
+  
     <!-- This content may need to be hiden or delayed to be shown until DOM content loads in order for a slopply load to not happen -->
+  
     <footer>
         <!-- SVG File (Unfortunatly svgs will look like this) -->
         <svg class="back-ground-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

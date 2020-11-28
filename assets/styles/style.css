@@ -60,6 +60,11 @@ footer {
     align-items: flex-end;
     justify-content: center;
 }
+.question-image {
+    height: 300px;
+    width: 300px;
+    position:relative;
+}
 
 /* Media Queries */
 
@@ -70,3 +75,4 @@ footer {
 @media screen and (max-width: 575px) {
 
 }
+

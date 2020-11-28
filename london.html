@@ -10,12 +10,14 @@
 </head>
 
 <body>
-   <article class="cities" id="London">
-
+    <!-- City Information -->
+    <h3>
+        London
+    </h3>
+    <article class="cities" id="London">
+        <!-- Image -->
         <img src="./assets/images/london-big-ben.jpg" width="600" height="400">
-        <h3>
-            London
-        </h3>
+
         <p>London is made up of two ancient cities which are now joined together.
             They are:
 
@@ -37,8 +39,8 @@
             <strong> Population:</strong> 8.982 million (2019) Eurostat
             <strong>Area codes:</strong> 9 area codes: 020, 01322, 01689, 01708, 01737, 01895, 01923, 01959, 01992;</br>
         </p>
-            <h3> Interesting facts about London</h3></br>
-        
+        <h3> Interesting facts about London</h3></br>
+
         <ul>
             <li>London is the biggest city in Britain and in Europe.</li>
             <li>London occupies over 620 square miles</li>
@@ -57,20 +59,14 @@
                 theatre admissions and over 70% of box-office revenues</li>
         </ul>
     </article>
-<div class = "cityName"
-data-locale = "en-US"
-data-currency="USD"
-data-skyscanner-widget="FlightSearchWidget" 
-data-destination-name="'LCY'"      
-  ></div>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
-  </script>
-  <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
-  <script src = './assets/js/results.js'></script>
-  
+    <!-- City Info Ends -->
+
+    <!-- Flight Widget -->
+    <div class="cityName" data-locale="en-US" data-currency="USD" data-skyscanner-widget="FlightSearchWidget"
+        data-destination-name="'LCY'"></div>
+
     <!-- This content may need to be hiden or delayed to be shown until DOM content loads in order for a slopply load to not happen -->
-  
+
     <footer>
         <!-- SVG File (Unfortunatly svgs will look like this) -->
         <svg class="back-ground-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -237,6 +233,10 @@ data-destination-name="'LCY'"
             </svg>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+    </script>
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
     <script src='./assets/js/results.js'></script>
 </body>
 

@@ -8,11 +8,12 @@ var answerTracker = 0;
 var questionTracker = 0;
 var keptScore = [];
 var cityCounter = 0;
+var carCounter = 0;
 var imagesSrc = [
     './assets/images/paris.jpg',
     './assets/images/rome.jpg',
     './assets/images/london-big-ben.jpg',
-    './assets/images/miami.png',
+    './assets/images/miami.jpg',
     './assets/images/universal-ball-800x450-1.jpg',
     './assets/images/kauai.jpg'
 ];
@@ -23,6 +24,20 @@ var cityName = [
     'Miami, Florida',
     'Orlando, Florida',
     'Kauai, Hawaii',
+];
+var progressCar = [
+    './assets/images/Question-Images/question-0-image.png',
+    './assets/images/Question-Images/question-1-image.png',
+    './assets/images/Question-Images/question-2-image.png',
+    './assets/images/Question-Images/question-3-image.png',
+    './assets/images/Question-Images/question-4-image.png',
+    './assets/images/Question-Images/question-5-image.png',
+    './assets/images/Question-Images/question-6-image.png',
+    './assets/images/Question-Images/question-7-image.png',
+    './assets/images/Question-Images/question-8-image.png',
+    './assets/images/Question-Images/question-9-image.png',
+    './assets/images/Question-Images/question-10-image.png',
+    './assets/images/Question-Images/question-11-image.png',
 ];
 //need description for each city picture 
 // it's going to be an array of 6 paragraph
@@ -248,6 +263,14 @@ var questChoiPoints = [
     }
 ]
 var preparedQuestion = function () {
+    $('.btn').remove();
+    $('.quizTitle').remove();
+    $('.quizDesc').remove();
+    $('#slide-show').remove();
+    var pngGrabber = document.createElement('img');
+    pngGrabber.src = progressCar[carCounter];
+    console.log(pngGrabber);
+    $(".image-wrapper").html('<img src="'+progressCar[carCounter]+'" />');
     var answers = document.querySelector('.answers')
     var choicesList = document.createElement("ol");
     choicesList.className = "orderedList";
@@ -265,6 +288,7 @@ var preparedQuestion = function () {
         choicesList.appendChild(listItem);
         answers.appendChild(choicesList);
     }
+    carCounter++;
 }
 $(document).on('click', '.value', function (e) {
     var answerChoice = e.target.getAttribute('data-answer-id');

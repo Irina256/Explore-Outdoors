@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.body-before-load {
+    opacity: 0;
+}
+.preload-finish {
+    opacity: 0;
+}
 footer {
     /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
     height: 1000px;

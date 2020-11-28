@@ -8,11 +8,12 @@ var answerTracker = 0;
 var questionTracker = 0;
 var keptScore = [];
 var cityCounter = 0;
+var carCounter = 0;
 var imagesSrc = [
     './assets/images/paris.jpg',
     './assets/images/rome.jpg',
     './assets/images/london-big-ben.jpg',
-    './assets/images/miami.png',
+    './assets/images/miami.jpg',
     './assets/images/universal-ball-800x450-1.jpg',
     './assets/images/kauai.jpg'
 ];
@@ -23,6 +24,20 @@ var cityName = [
     'Miami, Florida',
     'Orlando, Florida',
     'Kauai, Hawaii',
+];
+var progressCar = [
+    './assets/images/Question-Images/question-0-image.png',
+    './assets/images/Question-Images/question-1-image.png',
+    './assets/images/Question-Images/question-2-image.png',
+    './assets/images/Question-Images/question-3-image.png',
+    './assets/images/Question-Images/question-4-image.png',
+    './assets/images/Question-Images/question-5-image.png',
+    './assets/images/Question-Images/question-6-image.png',
+    './assets/images/Question-Images/question-7-image.png',
+    './assets/images/Question-Images/question-8-image.png',
+    './assets/images/Question-Images/question-9-image.png',
+    './assets/images/Question-Images/question-10-image.png',
+    './assets/images/Question-Images/question-11-image.png',
 ];
 //need description for each city picture 
 // it's going to be an array of 6 paragraph
@@ -248,6 +263,14 @@ var questChoiPoints = [
     }
 ]
 var preparedQuestion = function () {
+    $('.btn').remove();
+    $('.quizTitle').remove();
+    $('.quizDesc').remove();
+    $('#slide-show').remove();
+    var pngGrabber = document.createElement('img');
+    pngGrabber.src = progressCar[carCounter];
+    console.log(pngGrabber);
+    $(".image-wrapper").html('<img src="'+progressCar[carCounter]+'" />');
     var answers = document.querySelector('.answers')
     var choicesList = document.createElement("ol");
     choicesList.className = "orderedList";
@@ -258,18 +281,14 @@ var preparedQuestion = function () {
     answers.appendChild(question);
     for (var i = 0; i < questChoiPoints[questionTracker].choices.length; i++) {
         var listItem = document.createElement("button");
-        listItem.className = "value";
+        listItem.className = "value col s8 offset-s2 btn-large";
         listItem.textContent = questChoiPoints[questionTracker].choices[i];
         listItem.setAttribute("data-answer-id", listItem.textContent);
-        listItem.setAttribute("id", "value" + questionTracker);
-        listItem.style.border = "1px solid #0000FF";
-        listItem.style.padding = "10px 30px 10px 30px";
         listItem.style.display = "block";
-        listItem.style.backgroundColor = "lightslategray";
-        listItem.style.marginBottom = "5px";
         choicesList.appendChild(listItem);
         answers.appendChild(choicesList);
     }
+    carCounter++;
 }
 var body = document.querySelector(".body");
 body.classList.add("body-before-load");

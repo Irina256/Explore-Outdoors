@@ -26,9 +26,17 @@ var cityName = [
 ];
 //need description for each city picture 
 // it's going to be an array of 6 paragraph
-var cityDescription = ['Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, magni eos facilis mollitia corporis magnam at voluptas dignissimos aut vitae voluptatibus quidem dolorum provident quis! Amet provident dolore ut quo.']
-var questChoiPoints = [
-    {
+var cityDescription = [{
+
+
+    kauai: "Kauai is an island in the Central Pacific, part of the Hawaiian archipelago. It's nicknamed 'the Garden Isle ' thanks to the tropical rainforest covering much of its surface. The dramatic cliffs and pinnacles of its Na Pali Coast have served as a backdrop for major Hollywood films, while 10 - mile - long Waimea Canyon and the Nounou Trails traversing the Sleeping Giant mountain ridge are hiking destinations. It’ s no surprise that Kauai, also known as the“ Garden Isle, It is famous for its white sandy beaches, jagged green mountains, and tropical landscapes.Tourists have been flocking here for decades enamored with itsnatural beauty and often making Kauai their home.",
+    orlando: "Orlando, a city in central Florida, is home to more than a dozen theme parks. Chief among its claims to fame is Walt Disney World, comprised of parks like the Magic Kingdom and Epcot, as well as water parks. Another major destination, Universal Orlando, offers Universal Studios and Islands of Adventure, with the Wizarding World of Harry Potter straddling both. Thanks to its year-round sunny weather, high quality of life and attractions, Orlando is a well-known city.",
+    london: "London is made up of two ancient cities which are now joined together.They are: the City of London, know simply as 'the City' which is the business and financial heart of the United Kingdom. It is also known as the Square Mile (2.59 sq km/1 sq mi). It was the original Roman settlement (ancientLondinium), making it the oldest part of London and already 1,000 years old when the Tower of London was built. The City of Westminster, where Parliament and most of the government offices are located. Also Buckingham Palace, the official London residence of the Queen and the Royal family are located there too. Together they all make up a region known as Greater London.",
+    miami: " Miami is one of the world’s greatest and most iconic tourist destinations – thanks to its sub tropical climate, pristine beaches and relaxed ambiance. It also does fun really well. In keeping with the ‘fun’ theme. Miami, officially the City of Miami, is a metropolis located in southeastern Florida in the United States. It is the third most populous metropolis on the East coast of the United States, and it is the seventh largest in the country.",
+    paris: "Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12 th - century, Gothic Notre - Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint - Honoré.",
+rome:" Rome, capturing the attention of 7-10 million tourists every year, The Eternal City is bursting with history, art, and delicious food. Being in the spotlight for century’s you would think all of Rome’s secrets are revealed to the public eye. But there are lots of lesser-known stories about the city that you may not have heard of."
+}]
+var questChoiPoints = [{
         questions: 'What kind of weather do you like?',
         choices: [
             'Warm but dry',
@@ -36,15 +44,13 @@ var questChoiPoints = [
             'Rainy and Brisk',
             'Tropical and Sunny'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [1, 4, 2, 3, 3, 5],
-                secondChoice: [5, 2, 3, 0, 0, 5],
-                thirdChoice: [0, 3, 5, 3, 3, 0],
-                fourthChoice: [2, 3, 0, 4, 4, 5]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [1, 4, 2, 3, 3, 5],
+            secondChoice: [5, 2, 3, 0, 0, 5],
+            thirdChoice: [0, 3, 5, 3, 3, 0],
+            fourthChoice: [2, 3, 0, 4, 4, 5]
+        }]
     },
     {
         questions: 'What kind of activities are you looking forward to?',
@@ -54,15 +60,13 @@ var questChoiPoints = [
             'I want to do something exciting like sky dive, theme parks, scuba diving.',
             "I'm going on vacation with family and want a variety of different attractions"
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [5, 4, 5, 2, 3, 4],
-                secondChoice: [2, 3, 1, 3, 2, 5],
-                thirdChoice: [2, 1, 3, 2, 4, 5],
-                fourthChoice: [2, 3, 4, 2, 5, 3]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [5, 4, 5, 2, 3, 4],
+            secondChoice: [2, 3, 1, 3, 2, 5],
+            thirdChoice: [2, 1, 3, 2, 4, 5],
+            fourthChoice: [2, 3, 4, 2, 5, 3]
+        }]
     },
     {
         questions: 'What kind of shopping will you do once you get there?',
@@ -72,15 +76,13 @@ var questChoiPoints = [
             'I want to be able to buy historical souvenirs for my family from all the places and activities I visit.',
             "I might shop if I find something cool but I'm not really planning on it."
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [3, 5, 3, 1, 2, 4],
-                secondChoice: [5, 0, 4, 3, 2, 1],
-                thirdChoice: [5, 4, 5, 2, 3, 1],
-                fourthChoice: [1, 5, 2, 3, 2, 4]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [3, 5, 3, 1, 2, 4],
+            secondChoice: [5, 0, 4, 3, 2, 1],
+            thirdChoice: [5, 4, 5, 2, 3, 1],
+            fourthChoice: [1, 5, 2, 3, 2, 4]
+        }]
     },
     {
         questions: 'What kind of foods do you like?',
@@ -90,15 +92,13 @@ var questChoiPoints = [
             'I like spicy foods with a lot of flavor',
             'I love baked goods for all occasions.'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [5, 2, 5, 4, 4, 3],
-                secondChoice: [3, 4, 5, 1, 5, 0],
-                thirdChoice: [0, 3, 2, 5, 3, 4],
-                fourthChoice: [5, 3, 4, 1, 3, 0]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [5, 2, 5, 4, 4, 3],
+            secondChoice: [3, 4, 5, 1, 5, 0],
+            thirdChoice: [0, 3, 2, 5, 3, 4],
+            fourthChoice: [5, 3, 4, 1, 3, 0]
+        }]
     },
     {
         questions: 'How do you prefer to spend your free time?',
@@ -108,15 +108,13 @@ var questChoiPoints = [
             'Exploring the city',
             'Visiting theme parks'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [1, 1, 1, 3, 2, 5],
-                secondChoice: [0, 0, 0, 5, 3, 5],
-                thirdChoice: [5, 5, 5, 3, 2, 1],
-                fourthChoice: [3, 2, 2, 1, 5, 1]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [1, 1, 1, 3, 2, 5],
+            secondChoice: [0, 0, 0, 5, 3, 5],
+            thirdChoice: [5, 5, 5, 3, 2, 1],
+            fourthChoice: [3, 2, 2, 1, 5, 1]
+        }]
     },
     {
         questions: 'What gives you the biggest rush?',
@@ -126,15 +124,13 @@ var questChoiPoints = [
             'Tasting delicious food and Drinks',
             'Riding rollercoasters'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [5, 5, 5, 2, 1, 1],
-                secondChoice: [0, 0, 0, 5, 1, 5],
-                thirdChoice: [5, 5, 5, 3, 1, 4],
-                fourthChoice: [3, 1, 2, 1, 5, 1]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [5, 5, 5, 2, 1, 1],
+            secondChoice: [0, 0, 0, 5, 1, 5],
+            thirdChoice: [5, 5, 5, 3, 1, 4],
+            fourthChoice: [3, 1, 2, 1, 5, 1]
+        }]
     },
     {
         questions: "What's the perfect way to spend a day?",
@@ -144,15 +140,13 @@ var questChoiPoints = [
             'Visiting incredible parks with record-breaking rides',
             "See as much of nature's beauty as possible"
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [0, 0, 0, 5, 1, 5],
-                secondChoice: [5, 5, 5, 3, 2, 0],
-                thirdChoice: [1, 1, 1, 0, 5, 0],
-                fourthChoice: [1, 1, 1, 4, 3, 5]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [0, 0, 0, 5, 1, 5],
+            secondChoice: [5, 5, 5, 3, 2, 0],
+            thirdChoice: [1, 1, 1, 0, 5, 0],
+            fourthChoice: [1, 1, 1, 4, 3, 5]
+        }]
 
     },
     {
@@ -163,15 +157,13 @@ var questChoiPoints = [
             'Significant other',
             'Alone'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [4, 2, 3, 4, 5, 5],
-                secondChoice: [5, 4, 5, 5, 2, 5],
-                thirdChoice: [5, 4, 4, 3, 1, 5],
-                fourthChoice: [5, 5, 5, 1, 3, 0]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [4, 2, 3, 4, 5, 5],
+            secondChoice: [5, 4, 5, 5, 2, 5],
+            thirdChoice: [5, 4, 4, 3, 1, 5],
+            fourthChoice: [5, 5, 5, 1, 3, 0]
+        }]
 
     },
     {
@@ -182,15 +174,13 @@ var questChoiPoints = [
             'Creepy creatures',
             'Historical horrors'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [5, 4, 3, 5, 5, 0],
-                secondChoice: [5, 4, 4, 0, 5, 0],
-                thirdChoice: [1, 1, 0, 4, 4, 3],
-                fourthChoice: [1, 0, 0, 4, 4, 3]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [5, 4, 3, 5, 5, 0],
+            secondChoice: [5, 4, 4, 0, 5, 0],
+            thirdChoice: [1, 1, 0, 4, 4, 3],
+            fourthChoice: [1, 0, 0, 4, 4, 3]
+        }]
     },
     {
         questions: 'What is your preferred fruit among these:',
@@ -200,15 +190,13 @@ var questChoiPoints = [
             'Mango',
             'Apple'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [1, 3, 3, 2, 2, 5],
-                secondChoice: [3, 2, 2, 5, 5, 4],
-                thirdChoice: [2, 3, 1, 5, 4, 1],
-                fourthChoice: [5, 2, 3, 1, 3, 4]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [1, 3, 3, 2, 2, 5],
+            secondChoice: [3, 2, 2, 5, 5, 4],
+            thirdChoice: [2, 3, 1, 5, 4, 1],
+            fourthChoice: [5, 2, 3, 1, 3, 4]
+        }]
     },
     {
         questions: 'What’s your biggest pet peeve?',
@@ -218,15 +206,13 @@ var questChoiPoints = [
             'Lack of exciting things to do',
             'Large crowds'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [4, 3, 4, 4, 4, 1],
-                secondChoice: [2, 3, 3, 1, 1, 5],
-                thirdChoice: [4, 3, 4, 4, 5, 1],
-                fourthChoice: [3, 3, 3, 1, 1, 5]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [4, 3, 4, 4, 4, 1],
+            secondChoice: [2, 3, 3, 1, 1, 5],
+            thirdChoice: [4, 3, 4, 4, 5, 1],
+            fourthChoice: [3, 3, 3, 1, 1, 5]
+        }]
     },
     {
         questions: 'What is on your bucket list?',
@@ -236,15 +222,13 @@ var questChoiPoints = [
             'Leaving the map at home and completely losing yourself somewhere',
             'To see ancient structures'
         ],
-        points: [
-            {
-                //points ordered as paris, rome, london, miami, orlando and kauai
-                firstChoice: [3, 4, 3, 3, 3, 5],
-                secondChoice: [2, 2, 2, 5, 3, 5],
-                thirdChoice: [4, 4, 4, 2, 4, 1],
-                fourthChoice: [4, 5, 3, 1, 1, 2]
-            }
-        ]
+        points: [{
+            //points ordered as paris, rome, london, miami, orlando and kauai
+            firstChoice: [3, 4, 3, 3, 3, 5],
+            secondChoice: [2, 2, 2, 5, 3, 5],
+            thirdChoice: [4, 4, 4, 2, 4, 1],
+            fourthChoice: [4, 5, 3, 1, 1, 2]
+        }]
     }
 ]
 var preparedQuestion = function () {
@@ -280,24 +264,21 @@ $(document).on('click', '.value', function (e) {
         miamiScore += (questChoiPoints[questionTracker].points[0].firstChoice[3]);
         orlandoScore += (questChoiPoints[questionTracker].points[0].firstChoice[4]);
         kauaiScore += (questChoiPoints[questionTracker].points[0].firstChoice[5]);
-    }
-    else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 1]) {
+    } else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 1]) {
         parisScore += (questChoiPoints[questionTracker].points[0].secondChoice[0]);
         romeScore += (questChoiPoints[questionTracker].points[0].secondChoice[1]);
         londonScore += (questChoiPoints[questionTracker].points[0].secondChoice[2]);
         miamiScore += (questChoiPoints[questionTracker].points[0].secondChoice[3]);
         orlandoScore += (questChoiPoints[questionTracker].points[0].secondChoice[4]);
         kauaiScore += (questChoiPoints[questionTracker].points[0].secondChoice[5]);
-    }
-    else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 2]) {
+    } else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 2]) {
         parisScore += (questChoiPoints[questionTracker].points[0].thirdChoice[0]);
         romeScore += (questChoiPoints[questionTracker].points[0].thirdChoice[1]);
         londonScore += (questChoiPoints[questionTracker].points[0].thirdChoice[2]);
         miamiScore += (questChoiPoints[questionTracker].points[0].thirdChoice[3]);
         orlandoScore += (questChoiPoints[questionTracker].points[0].thirdChoice[4]);
         kauaiScore += (questChoiPoints[questionTracker].points[0].thirdChoice[5]);
-    }
-    else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 3]) {
+    } else if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker + 3]) {
         parisScore += (questChoiPoints[questionTracker].points[0].fourthChoice[0]);
         romeScore += (questChoiPoints[questionTracker].points[0].fourthChoice[1]);
         londonScore += (questChoiPoints[questionTracker].points[0].fourthChoice[2]);
@@ -312,8 +293,7 @@ $(document).on('click', '.value', function (e) {
         eachQuestion.remove();
         orderedList.remove();
         preparedQuestion();
-    }
-    else {
+    } else {
         scoreReport(parisScore, romeScore, londonScore, miamiScore, orlandoScore, kauaiScore);
     }
 });
@@ -331,22 +311,22 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
     var highScore = (keptScore.indexOf(Math.max(...keptScore)));
     switch (highScore) {
         case 0:
-                window.location.replace('paris.html');
+            window.location.replace('paris.html');
             break;
         case 1:
-                window.location.replace('rome.html');
+            window.location.replace('rome.html');
             break;
         case 2:
-                window.location.replace('london.html');
+            window.location.replace('london.html');
             break;
         case 3:
-                window.location.replace('miami.html');
+            window.location.replace('miami.html');
             break;
         case 4:
-                window.location.replace('orlando.html');
+            window.location.replace('orlando.html');
             break;
         case 5:
-                window.location.replace('kauai.html');
+            window.location.replace('kauai.html');
             break;
     }
 }

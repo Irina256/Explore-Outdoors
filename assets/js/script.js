@@ -290,6 +290,14 @@ var preparedQuestion = function () {
     }
     carCounter++;
 }
+var body = document.querySelector(".body");
+body.classList.add("body-before-load");
+window.addEventListener('load', function() {
+    var preloader = document.querySelector('.preloader');
+    preloader.classList.add('preload-finish');
+    body.classList.remove("body-before-load")
+})
+
 $(document).on('click', '.value', function (e) {
     var answerChoice = e.target.getAttribute('data-answer-id');
     if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker]) {

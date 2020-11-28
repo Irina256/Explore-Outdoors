@@ -26,21 +26,30 @@ body {
     font-family: 'Castoro', serif;
 }
 
+.container {
+    margin-bottom: 100px;
+    padding-bottom: 15px;
+}
 
 /* button styling */
 .btn,
 .value {
     color: var(--lightBlue);
+    opacity: 80%;
+    margin-top: 5px;
     border-radius: 5px;
     font-size: 24px;
     font-weight: bolder;
     background-color: var(--secondary);
+    transition: all .5s ease-out;
+    background-position: 0 -10px;
 }
 
 .btn:hover,
 .value:hover {
-    background: rgb(15,76,117);
-    background: linear-gradient(90deg, rgba(15,76,117,1) 0%, rgba(50,130,184,1) 51%, rgba(187,225,250,1) 100%);
+    background: rgb(80,157,218);
+    background: linear-gradient(180deg, rgba(80,157,218,1) 0%, rgba(86,97,199,1) 35%, rgba(112,133,198,1) 100%);
+    background-position: 1px -25px;
 }
 
 

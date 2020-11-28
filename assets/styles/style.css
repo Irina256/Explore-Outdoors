@@ -10,6 +10,13 @@
 .preload-finish {
     opacity: 0;
 }
+.preloader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #77b3d4;
+}
 footer {
     /* This height is for me to position the footer the way I need it before content is added. This will be removed as soon as content is added AC */
     height: 1000px;

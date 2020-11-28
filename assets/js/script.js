@@ -249,6 +249,7 @@ var preparedQuestion = function () {
     $('.quizTitle').remove();
     $('.quizDesc').remove();
     $('#slide-show').remove();
+    $('.img-description').remove();
     var pngGrabber = document.createElement('img');
     pngGrabber.src = progressCar[carCounter];
     console.log(pngGrabber);

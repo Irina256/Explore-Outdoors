@@ -139,6 +139,9 @@ footer {
     width: 300px;
     position:relative;
 }
+.cityName {
+    width: 500px;
+}
 
 /* Media Queries  */
 

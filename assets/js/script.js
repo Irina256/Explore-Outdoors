@@ -258,15 +258,10 @@ var preparedQuestion = function () {
     answers.appendChild(question);
     for (var i = 0; i < questChoiPoints[questionTracker].choices.length; i++) {
         var listItem = document.createElement("button");
-        listItem.className = "value";
+        listItem.className = "value col s8 offset-s2 btn-large";
         listItem.textContent = questChoiPoints[questionTracker].choices[i];
         listItem.setAttribute("data-answer-id", listItem.textContent);
-        listItem.setAttribute("id", "value" + questionTracker);
-        listItem.style.border = "1px solid #0000FF";
-        listItem.style.padding = "10px 30px 10px 30px";
         listItem.style.display = "block";
-        listItem.style.backgroundColor = "lightslategray";
-        listItem.style.marginBottom = "5px";
         choicesList.appendChild(listItem);
         answers.appendChild(choicesList);
     }

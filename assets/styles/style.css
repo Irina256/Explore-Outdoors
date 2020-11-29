@@ -52,6 +52,11 @@ body {
     background-position: 1px -25px;
 }
 
+.answers {
+    width: 100%;
+    word-wrap: break-word;
+}
+
 
 /* footer styling */
 footer {

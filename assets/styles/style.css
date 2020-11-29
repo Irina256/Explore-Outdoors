@@ -95,6 +95,21 @@ body {
     color: var(--lightBlue);
     font-family: 'Castoro', serif;
 }
+
+/* results html stylings */
+
+article p {
+    font-size: 24px;
+}
+
+li {
+    font-size: 20px;
+}
+
+.facts {
+    border: 3px solid var(--lightBlue);
+}
+
 .img-city {
     animation-delay: .7s;
 }
@@ -110,6 +125,14 @@ body {
 }
 .answers {
     animation-duration: 1.5s;
+}
+
+/* widget syling */
+
+.widget {
+    margin-top: 100px;
+    background-color: var(--lightBlue);
+    width: 28%;
 }
 
 /* button styling */
@@ -136,11 +159,6 @@ body {
     background: rgb(80,157,218);
     background: linear-gradient(180deg, rgba(80,157,218,1) 0%, rgba(86,97,199,1) 35%, rgba(112,133,198,1) 100%);
     background-position: 1px -25px;
-}
-
-.answers {
-    width: 100%;
-    word-wrap: break-word;
 }
 
 

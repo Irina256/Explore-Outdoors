@@ -250,9 +250,6 @@ var preparedQuestion = function () {
     $('.quizDesc').remove();
     $('#slide-show').remove();
     $('.img-description').remove();
-    var pngGrabber = document.createElement('img');
-    pngGrabber.src = progressCar[carCounter];
-    console.log(pngGrabber);
     $(".image-wrapper").html('<img src="' + progressCar[carCounter] + '" />');
     var answers = document.querySelector('.answers')
     var choicesList = document.createElement("ol");
@@ -374,3 +371,4 @@ var slideShow = function () {
     setTimeout('slideShow()', 5000);
 }
 window.onload = slideShow;
+

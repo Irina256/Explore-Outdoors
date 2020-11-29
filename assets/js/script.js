@@ -250,6 +250,8 @@ var preparedQuestion = function () {
     $('.quizDesc').remove();
     $('#slide-show').remove();
     $('.img-description').remove();
+    //Animation for question cards
+    $('.answers').addClass("animate__animated animate__jackInTheBox")
     var pngGrabber = document.createElement('img');
     pngGrabber.src = progressCar[carCounter];
     console.log(pngGrabber);
@@ -264,9 +266,6 @@ var preparedQuestion = function () {
     answers.appendChild(question);
     for (var i = 0; i < questChoiPoints[questionTracker].choices.length; i++) {
         var listItem = document.createElement("button");
-        listItem.setAttribute("data-aos", "flip-left");
-        listItem.setAttribute("data-aos-easing", "ease-out-cubic")
-        listItem.setAttribute("data-aos-duration", "1200")
         listItem.className = "value col s8 offset-s2 btn-large";
         listItem.textContent = questChoiPoints[questionTracker].choices[i];
         listItem.setAttribute("data-answer-id", listItem.textContent);
@@ -283,8 +282,9 @@ window.addEventListener('load', function () {
     preloader.classList.add('preload-finish');
     body.classList.remove("body-before-load")
 })
-
 $(document).on('click', '.value', function (e) {
+    //removal of animation per button click
+    $('.answers').removeClass("animate__animated animate__jackInTheBox")
     var answerChoice = e.target.getAttribute('data-answer-id');
     if (answerChoice === questChoiPoints[questionTracker].choices[answerTracker]) {
         parisScore += (questChoiPoints[questionTracker].points[0].firstChoice[0]);

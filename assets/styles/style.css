@@ -87,6 +87,7 @@ header img {
 
 .header {
     font-family: 'Lobster', cursive;
+    animation-delay: .5s;
 }
 
 body {
@@ -94,10 +95,21 @@ body {
     color: var(--lightBlue);
     font-family: 'Castoro', serif;
 }
-
+.img-city {
+    animation-delay: .7s;
+}
+.slideShow {
+    animation-delay: 1s;
+}
 .container {
     margin-bottom: 100px;
     padding-bottom: 15px;
+}
+.city-description {
+    animation-delay: 1.2s;
+}
+.answers {
+    animation-duration: 1.5s;
 }
 
 /* button styling */

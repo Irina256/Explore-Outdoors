@@ -250,14 +250,11 @@ var preparedQuestion = function () {
     $('.quizDesc').remove();
     $('#slide-show').remove();
     $('.img-description').remove();
-<<<<<<< HEAD
-=======
     //Animation for question cards
     $('.answers').addClass("animate__animated animate__jackInTheBox")
     var pngGrabber = document.createElement('img');
     pngGrabber.src = progressCar[carCounter];
     console.log(pngGrabber);
->>>>>>> 6cacd6265250f4423ef629af7483aa6aa63f9cb9
     $(".image-wrapper").html('<img src="' + progressCar[carCounter] + '" />');
     var answers = document.querySelector('.answers')
     var choicesList = document.createElement("ol");
@@ -377,5 +374,3 @@ var slideShow = function () {
     setTimeout('slideShow()', 5000);
 }
 window.onload = slideShow;
-
-

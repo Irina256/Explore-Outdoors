@@ -95,6 +95,17 @@ body {
     color: var(--lightBlue);
     font-family: 'Castoro', serif;
 }
+
+/* results html stylings */
+
+article p {
+    font-size: 24px;
+}
+
+li {
+    font-size: 20px;
+}
+
 .img-city {
     animation-delay: .7s;
 }
@@ -110,6 +121,14 @@ body {
 }
 .answers {
     animation-duration: 1.5s;
+}
+
+/* widget syling */
+
+.widget {
+    margin-top: 100px;
+    background-color: var(--lightBlue);
+    width: 28%;
 }
 
 /* button styling */

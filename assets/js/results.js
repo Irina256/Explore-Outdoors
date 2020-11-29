@@ -8,7 +8,7 @@ const userFrom = function (location) {
                 .then(function (data) {
                     var userCity = data.results[0].components.city;
                     var userLocation = $('.cityName');
-                    userLocation.attr('data-origin-name',userCity);
+                    userLocation.attr('data-origin-name', userCity);
                 });
         });
 };

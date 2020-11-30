@@ -116,6 +116,12 @@ li {
     margin-bottom: 100px;
     padding-bottom: 15px;
 }
+.city-img {
+    animation-delay: .8s;
+}
+.result-info {
+    animation-delay: 1.2s;
+}
 .city-description {
     animation-delay: 1.2s;
 }

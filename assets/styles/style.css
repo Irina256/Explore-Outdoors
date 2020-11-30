@@ -189,24 +189,37 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    .cities img {
+        margin-bottom: 50px;
+    }
+
     .widget {
         width: 67%;
+    }
+
+    .stats {
+        margin-top: 100px;
     }
 }
 
 @media screen and (max-width: 575px) {
 
+
+
     .cities img {
         width: 95%;
-        margin-bottom: 50px;
     }
 
     .widget {
         width: 87%;
     }
 
-    .stats {
-        margin-top: 100px;
+    article p {
+        font-size: 18px;
+    }
+    
+    li {
+        font-size: 16px;
     }
 }
 

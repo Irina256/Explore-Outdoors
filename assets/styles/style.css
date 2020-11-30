@@ -176,12 +176,37 @@ footer {
 }
 
 /* Media Queries  */
+@media screen and (max-width: 980px) {
+
+    .widget {
+        width: 53%;
+    }
+
+    .facts-container {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 768px) {
 
+    .widget {
+        width: 67%;
+    }
 }
 
 @media screen and (max-width: 575px) {
 
+    .cities img {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+
+    .widget {
+        width: 87%;
+    }
+
+    .stats {
+        margin-top: 100px;
+    }
 }
 

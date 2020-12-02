@@ -266,7 +266,7 @@ var preparedQuestion = function () {
     answers.appendChild(question);
     for (var i = 0; i < questChoiPoints[questionTracker].choices.length; i++) {
         var listItem = document.createElement("button");
-        listItem.className = "value col s8 offset-s2 btn-large";
+        listItem.className = "value col s12 btn-large";
         listItem.textContent = questChoiPoints[questionTracker].choices[i];
         listItem.setAttribute("data-answer-id", listItem.textContent);
         listItem.style.display = "block";

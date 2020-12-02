@@ -106,6 +106,10 @@ li {
     font-size: 20px;
 }
 
+.cities img {
+    margin-bottom: 50px;
+}
+
 .img-city {
     animation-delay: .7s;
 }
@@ -144,6 +148,7 @@ li {
     transition: all .5s ease-out;
     background-position: 0 -10px;
 }
+
 .value {
     height: 200px;
     width: 500px;
@@ -189,10 +194,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    .cities img {
-        margin-bottom: 50px;
-    }
-
     .widget {
         width: 67%;
     }
@@ -203,8 +204,14 @@ footer {
 }
 
 @media screen and (max-width: 575px) {
+    .eachQuestion {
+        font-size: 28px;
+    }
 
-
+    .value {
+        font-size: 12px;
+        line-height: 24px;
+    }
 
     .cities img {
         width: 95%;
@@ -223,3 +230,18 @@ footer {
     }
 }
 
+@media screen and (max-width: 350px) {
+    #home h2{
+        font-size: 28px;
+    }
+
+    .btn {
+        margin-top: 25px;
+        width: 175px;
+        font-size: 18px;
+    }
+
+    .widget {
+        width: 99%;
+    }
+}

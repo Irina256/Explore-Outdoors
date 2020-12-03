@@ -341,23 +341,30 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
     switch (highScore) {
         case 0:
             window.location.replace('paris.html');
+            var city2Go = 'paris';
             break;
         case 1:
             window.location.replace('rome.html');
+            var city2Go = 'rome';
             break;
         case 2:
             window.location.replace('london.html');
+            var city2Go = 'london';
             break;
         case 3:
             window.location.replace('miami.html');
+            var city2Go = 'miami';
             break;
         case 4:
             window.location.replace('orlando.html');
+            var city2Go = 'orlando';
             break;
         case 5:
             window.location.replace('kauai.html');
+            var city2Go = 'kauai';
             break;
     }
+   (localStorage.setItem("cityToGo", city2Go));
 }
 var imageCity = document.querySelector('.img-city');
 var cityDetails = document.querySelector('.city-description');

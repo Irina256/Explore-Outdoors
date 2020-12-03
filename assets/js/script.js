@@ -275,13 +275,13 @@ var preparedQuestion = function () {
     }
     carCounter++;
 }
-var body = document.querySelector(".body");
-body.classList.add("body-before-load");
-window.addEventListener('load', function () {
-    var preloader = document.querySelector('.preloader');
-    preloader.classList.add('preload-finish');
-    body.classList.remove("body-before-load")
-})
+// var body = document.querySelector(".body");
+// body.classList.add("body-before-load");
+// window.addEventListener('load', function () {
+//     var preloader = document.querySelector('.preloader');
+//     preloader.classList.add('preload-finish');
+//     body.classList.remove("body-before-load")
+// })
 $(document).on('click', '.value', function (e) {
     //removal of animation per button click
     $('.answers').removeClass("animate__animated animate__jackInTheBox")

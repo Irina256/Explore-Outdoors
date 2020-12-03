@@ -181,11 +181,16 @@ footer {
 }
 
 /* Media Queries  */
-@media screen and (max-width: 980px) {
-
+@media screen and (max-width: 1789px) {
     .widget {
-        width: 53%;
+        display: flex;
+        align-content: center;
+        height: min-content;
+        width: min-content;
     }
+}
+
+@media screen and (max-width: 980px) {
 
     .facts-container {
         display: none;
@@ -193,10 +198,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-    .widget {
-        width: 67%;
-    }
 
     .stats {
         margin-top: 100px;
@@ -214,11 +215,8 @@ footer {
     }
 
     .cities img {
-        width: 95%;
-    }
-
-    .widget {
-        width: 87%;
+        height: 80%;
+        width: 80%;
     }
 
     article p {
@@ -230,10 +228,22 @@ footer {
     }
 }
 
-@media screen and (max-width: 350px) {
-    #home h2{
-        font-size: 28px;
+@media screen and (max-width: 500px) {
+    .widget {
+        display: none;
     }
+
+    article p {
+        font-size: 16px;
+    }
+    
+    li {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 438px) {
 
     .btn {
         margin-top: 25px;
@@ -241,7 +251,12 @@ footer {
         font-size: 18px;
     }
 
-    .widget {
-        width: 99%;
+}
+
+@media screen and (max-width: 350px) {
+
+    #home h2{
+        font-size: 28px;
     }
+
 }

@@ -13,6 +13,9 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+    </script>
 </head>
 
 
@@ -82,6 +85,7 @@
     <div class="container center-align widget z-depth-5">
         <div class="row">
             <div class="cityName" 
+            id="skyScanner"
             data-locale="en-US" 
             data-currency="USD" 
             data-skyscanner-widget="FlightSearchWidget"
@@ -89,6 +93,10 @@
             ></div>
         </div>
     </div>
+    <script>
+        var userCity = localStorage.getItem("userCity");
+        $("#skyScanner").attr("data-origin-name", `'${userCity}'`);
+    </script>
 
     <!-- This content may need to be hiden or delayed to be shown until DOM content loads in order for a slopply load to not happen -->
     <footer>
@@ -257,10 +265,11 @@
             </svg>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous">
+    
+    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js"></script>
+    <script>
+        $(".bpk-input").val("Maimi")
     </script>
-    <script src="https://widgets.skyscanner.net/widget-server/js/loader.js" async></script>
     <script src='./assets/js/results.js'></script>
 </body>
 

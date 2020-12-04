@@ -7,8 +7,9 @@ const userFrom = function (location) {
         .then(function (response) {
             response.json()
                 .then(function (data) {
-                    var userCity = data.results[0].components.city;
-                    var userLocation = $('.cityName');
+                    var userCity = data.results[0].components.city; 
+                    localStorage.setItem("userCity", userCity); 
+                    var userLocation = $('#skyScanner');
                     userLocation.attr('data-origin-name', userCity);
                 });
         });

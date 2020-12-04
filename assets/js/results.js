@@ -22,11 +22,12 @@ var cityTwoGo = function () {
         response.json().then(function (data) {
             var longitude = data.coord['lon'];
             var latitude = data.coord['lat'];
-            cityWeather(latitude,longitude);
+            var icon = data.weather[0].icon;
+            cityWeather(latitude,longitude, icon);
         });
     });
 }
-var cityWeather = function (lat, lon) {
+var cityWeather = function (lat, lon, icon) {
     var apiCityWeather = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&appid=${apiKey}`
     fetch(apiCityWeather).then(function (response) {
         response.json().then(function (data) {
@@ -34,9 +35,11 @@ var cityWeather = function (lat, lon) {
             temp = Math.round(((temp - 273.15) * 1.8 + 32));
             var humidity = data.current['humidity'];
             var windSpeed = data.current['wind_speed'];
+            iconWeather = `<img src = http://openweathermap.org/img/wn/${icon}.png>`
             console.log(temp);
             console.log(humidity);
             console.log(windSpeed);
+            console.log(iconWeather);
         })
     })
 }

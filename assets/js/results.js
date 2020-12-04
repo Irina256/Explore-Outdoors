@@ -37,6 +37,13 @@ var cityWeather = function (lat, lon, icon) {
             var humidity = data.current['humidity'];
             var windSpeed = data.current['wind_speed'];
             iconWeather = `<img src = http://openweathermap.org/img/wn/${icon}.png>`
+            var weatherInfo = document.querySelector('.stats');
+            var weatherInfos = document.createElement('div');
+            weatherInfos.textContent = iconWeather;
+            weatherInfos.textContent = 'Temperature' + temp;
+            weatherInfos.textContent ='Humidity' + humidity;
+            weatherInfos.textContent = 'Wind Speed ' + windSpeed;
+            weatherInfo.appendChild(weatherInfos);
             console.log(temp);
             console.log(humidity);
             console.log(windSpeed);

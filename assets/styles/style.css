@@ -255,9 +255,7 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
-    .stats {
-        margin-top: 100px;
-    }
+ 
 
     .facts-container {
         display: none;

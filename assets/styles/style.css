@@ -342,7 +342,7 @@ footer {
 
     .result-info {
 
-        text-align: justify;
+        text-align: center;
     }
 
     .row .col.s12 {
@@ -352,10 +352,10 @@ footer {
 
     }
     .city-description{
-        text-align: justify;
+        text-align: center;
     }
     .quizDesc{
-        text-align:justify
+        text-align:center
     }
 }
 
@@ -390,5 +390,10 @@ footer {
 
             margin-left: 22%;
         }
+.header{
+    font-size: 41px;
 
-    }
+}
+
+}
+    

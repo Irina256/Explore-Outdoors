@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./assets/styles/animations.css">
     <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="./assets/styles/style.css">
 </head>
 
@@ -15,25 +19,17 @@
 <body class="body">
     <div class="container center-align">
         <div class="row">
-            <!--  Preloader Section  -->
-            <div class="preloader">
-                <img class="airplane" src="./assets/images/preloader-imgs/airplane.png" alt="airplane">
-                <h3><i>Taking you to Explore Outdoors...</i></h3>
-                <img class="cloud1" src="./assets/images/preloader-imgs/cloud.png" alt="cloud1">
-                <img class="cloud2" src="./assets/images/preloader-imgs/cloud.png" alt="cloud2">
-                <img class="cloud3" src="./assets/images/preloader-imgs/cloud.png" alt="cloud3">
-            </div>
             <!-- City Information -->
-            <h3 class="col s12">
+            <h3 class="resultHeader header col s12 animate__animated animate__flipInX">
                 Miami
             </h3>
         </div>
         <div class="col s12">
             <article class="cities" id="Miami">
                 <!-- Image -->
-                <img src="./assets/images/miami.jpg" class="z-depth-5" width="600" height="400">
+                <img src="./assets/images/miami.jpg" class="z-depth-5 animate__animated animate__jackInTheBox city-img" width="600" height="400">
 
-                <p>
+                <p class="animate__animated animate__fadeInUp result-info">
                     Miami is one of the world’s greatest and most iconic tourist destinations – thanks to its sub tropical
                     climate, pristine beaches and relaxed ambiance. It also does fun really well. In keeping with the ‘fun’
                     theme.
@@ -43,7 +39,7 @@
                 </p>
             </article>
         </div>
-        <div class="row stats">
+        <div class="row stats animate__animated animate__fadeInUp result-info">
             <ul class="col s12">
                 <li>Area code: Area code 786</li>
                 <li>Local time: Friday 6:08 PM</li>

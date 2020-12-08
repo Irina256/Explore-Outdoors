@@ -21,6 +21,7 @@ var cityTwoGo = function () {
     var cityApi = `https://api.openweathermap.org/data/2.5/weather?q=${city2Go}&appid=${apiKey}`
     fetch(cityApi).then(function (response) {
         response.json().then(function (data) {
+            console.log(data);
             var longitude = data.coord['lon'];
             var latitude = data.coord['lat'];
             var icon = data.weather[0].icon;

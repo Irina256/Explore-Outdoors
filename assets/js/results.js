@@ -38,6 +38,7 @@ var cityWeather = function (lat, lon, icon) {
             var windSpeed = data.current['wind_speed'];
             var weatherInfo = document.querySelector('.stats');
             var weatherInfos = document.createElement('div');
+            weatherInfos.classList = "col s6 m6 l4 z-depth-5 card cyan darken-3";
 
             var iconImg = document.createElement("img")
             iconImg.setAttribute("src", "http://openweathermap.org/img/wn/" + icon + ".png");

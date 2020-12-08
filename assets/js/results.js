@@ -7,8 +7,8 @@ const userFrom = function (location) {
         .then(function (response) {
             response.json()
                 .then(function (data) {
-                    var userCity = data.results[0].components.city; 
-                    localStorage.setItem("userCity", userCity); 
+                    var userCity = data.results[0].components.city;
+                    localStorage.setItem("userCity", userCity);
                     var userLocation = $('#skyScanner');
                     userLocation.attr('data-origin-name', userCity);
                 });
@@ -25,7 +25,7 @@ var cityTwoGo = function () {
             var longitude = data.coord['lon'];
             var latitude = data.coord['lat'];
             var icon = data.weather[0].icon;
-            cityWeather(latitude,longitude, icon);
+            cityWeather(latitude, longitude, icon);
         });
     });
 }
@@ -37,19 +37,33 @@ var cityWeather = function (lat, lon, icon) {
             temp = Math.round(((temp - 273.15) * 1.8 + 32));
             var humidity = data.current['humidity'];
             var windSpeed = data.current['wind_speed'];
-            iconWeather = `<img src = http://openweathermap.org/img/wn/${icon}.png>`
+            var weatherInfo = document.querySelector('.stats');
+            var weatherInfos = document.createElement('div');
+            weatherInfos.classList = "col s6 m6 l4 z-depth-5 card cyan darken-3";
+
+            var iconImg = document.createElement("img")
+            iconImg.setAttribute("src", "http://openweathermap.org/img/wn/" + icon + ".png");
+            weatherInfos.appendChild(iconImg);
+
+            var tempP = document.createElement("p");
+            tempP.textContent = 'Temperature: ' + temp + " F";
+            weatherInfos.appendChild(tempP);
+
+            var humP = document.createElement("p");
+            humP.textContent = 'Humidity: ' + humidity + "%";
+            weatherInfos.appendChild(humP);
+
+            var windP = document.createElement("p");
+            windP.textContent = 'Wind Speed: ' + windSpeed + " MPH";
+            weatherInfos.appendChild(windP);
+
+            weatherInfo.appendChild(weatherInfos);
             console.log(temp);
             console.log(humidity);
             console.log(windSpeed);
-            console.log(iconWeather);
         })
     })
 }
+
+
 cityTwoGo();
-var body = document.querySelector(".body");
-body.classList.add("body-before-load");
-window.addEventListener('load', function () {
-    var preloader = document.querySelector('.preloader');
-    preloader.classList.add('preload-finish');
-    body.classList.remove("body-before-load")
-})

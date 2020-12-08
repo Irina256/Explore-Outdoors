@@ -10,20 +10,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 main {
     overflow: hidden;
     width: 100%;
 }
+
 .main-content {
     width: 100%;
     position: absolute;
     opacity: 0;
-    animation: mainContentIn .2s  3s   forwards;
+    animation: mainContentIn .2s 3s forwards;
 }
+
 @keyframes mainContentIn {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -41,35 +45,43 @@ main {
     align-items: center;
     animation: moveIntro 3s 3s forwards;
 }
+
 @keyframes moveIntro {
     from {
         transform: translateX(0px);
         opacity: 1;
     }
+
     to {
         transform: translateX(3000px);
         opacity: 0;
     }
 }
+
 /* Plane animation inspiration for Dev Ed Youtube */
-.cloud1, .cloud2, .cloud3 {
+.cloud1,
+.cloud2,
+.cloud3 {
     height: 100px;
     position: absolute;
     right: 0%;
     z-index: -1;
 }
+
 .cloud1 {
     top: 25%;
     transform: translate(100%, -25%);
     animation: clouds 3s ease infinite;
 }
+
 .cloud2 {
     top: 50%;
     transform: translate(100%, -50%);
     animation: clouds 3s ease infinite 2s;
 }
+
 .cloud3 {
-    top: 75%; 
+    top: 75%;
     transform: translate(100%, -75%);
     animation: clouds 3s ease infinite 1.5s;
 }
@@ -78,6 +90,7 @@ main {
     height: 200px;
     animation: airplane 1s ease infinite alternate;
 }
+
 .preloader h3 {
     position: absolute;
     top: 75%;
@@ -91,26 +104,30 @@ main {
     from {
         transform: translateY(0px);
     }
+
     to {
         transform: translateY(50px);
     }
 }
+
 @keyframes clouds {
     from {
         right: 0%;
-    } 
+    }
+
     to {
         right: 140%;
     }
 }
+
 /* end preloader */
 
+
+/* main styling */
 header img {
     width: 60%;
     padding: 10px;
 }
-
-
 
 body {
     background-color: var(--primary);
@@ -127,6 +144,31 @@ article p {
 li {
     font-size: 20px;
 }
+
+.stats {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.row .col.l4 {
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .cities img {
     margin-bottom: 50px;
 }
@@ -136,12 +178,15 @@ li {
     font-family: 'Lobster', cursive;
     animation-delay: 4.2s;
 }
+
 .img-city {
     animation-delay: 4.5s;
 }
+
 .slideShow {
     animation-delay: 4.7s;
 }
+
 .city-description {
     animation-delay: 4.9s;
 }
@@ -150,16 +195,20 @@ li {
 .resultHeader {
     animation-delay: .5s;
 }
+
 .container {
     margin-bottom: 100px;
     padding-bottom: 15px;
 }
+
 .city-img {
     animation-delay: .8s;
 }
+
 .result-info {
     animation-delay: 1.2s;
 }
+
 .answers {
     animation-duration: 1.5s;
 }
@@ -194,8 +243,8 @@ li {
 
 .btn:hover,
 .value:hover {
-    background: rgb(80,157,218);
-    background: linear-gradient(180deg, rgba(80,157,218,1) 0%, rgba(86,97,199,1) 35%, rgba(112,133,198,1) 100%);
+    background: rgb(80, 157, 218);
+    background: linear-gradient(180deg, rgba(80, 157, 218, 1) 0%, rgba(86, 97, 199, 1) 35%, rgba(112, 133, 198, 1) 100%);
     background-position: 1px -25px;
 }
 
@@ -208,11 +257,13 @@ footer {
     align-items: flex-end;
     justify-content: center;
 }
+
 .question-image {
     height: 300px;
     width: 300px;
-    position:relative;
+    position: relative;
 }
+
 .cityName {
     width: 500px;
 }
@@ -228,72 +279,140 @@ footer {
 }
 
 @media screen and (max-width: 980px) {
+ 
 
     .facts-container {
         display: none;
     }
 }
 
-@media screen and (max-width: 768px) {
 
-    .stats {
-        margin-top: 100px;
-    }
-}
+    @media screen and (max-width: 768px) {
 
-@media screen and (max-width: 575px) {
-    .eachQuestion {
-        font-size: 28px;
+        .stats {
+            margin-top: 100px;
+        }
+
+
     }
 
-    .value {
-        font-size: 12px;
-        line-height: 24px;
+    @media screen and (max-width: 575px) {
+        .eachQuestion {
+            font-size: 28px;
+        }
+
+        .value {
+            font-size: 12px;
+            line-height: 24px;
+        }
+
+        .cities img {
+            height: 80%;
+            width: 80%;
+        }
+
+        article p {
+            font-size: 18px;
+        }
+
+        li {
+            font-size: 16px;
+        }
     }
 
-    .cities img {
-        height: 80%;
-        width: 80%;
+    @media screen and (max-width: 500px) {
+        .widget {
+            display: none;
+        }
+
+        article p {
+            font-size: 16px;
+        }
+
+        li {
+            font-size: 17px;
+        }
+
+        #home h2 {
+            font-size: 28px;
+        }
+
+        .row .col.s6 {
+            width: 100%;
+
+
+        }
+
+        .row .col.offset-s3 {
+
+            margin-left: 0;
+        }
+
+        .row .btn {
+
+            margin: 10% 25%;
+        }
+
+        .eachQuestion {
+            text-align: center;
+            margin-top: 0;
+        }
+
+    .container {
+        margin-bottom: 0;
+
+
     }
 
-    article p {
-        font-size: 18px;
+    .result-info {
+
+        text-align: center;
     }
+
     
-    li {
-        font-size: 16px;
+    .city-description{
+        text-align: center;
+    }
+    .quizDesc{
+        text-align:center
     }
 }
 
-@media screen and (max-width: 500px) {
-    .widget {
-        display: none;
+    @media screen and (max-width: 438px) {
+
+        .btn {
+            margin-top: 25px;
+            width: 175px;
+            font-size: 18px;
+        }
+
+        #home h2 {
+            font-size: 28px;
+        }
+
+        .row .btn {
+
+            margin-left: 28%;
+        }
+      
     }
 
-    article p {
-        font-size: 16px;
-    }
+
+
+    @media screen and (max-width: 350px) {
+
+        #home h2 {
+            font-size: 28px;
+        }
+
+        .row .btn {
+
+            margin-left: 22%;
+        }
+.header{
+    font-size: 41px;
+
+}
+
+}
     
-    li {
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (max-width: 438px) {
-
-    .btn {
-        margin-top: 25px;
-        width: 175px;
-        font-size: 18px;
-    }
-
-}
-
-@media screen and (max-width: 350px) {
-
-    #home h2{
-        font-size: 28px;
-    }
-
-}

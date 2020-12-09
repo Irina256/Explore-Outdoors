@@ -50,199 +50,199 @@ var cityDescription = [
     "Honolulu, on the island of Oahu’s south shore, is capital of Hawaii and gateway to the U.S. island chain. The Waikiki neighborhood is its center for dining, nightlife and shopping, famed for its iconic crescent beach backed by palms and high-rise hotels, with volcanic Diamond Head crater looming in the distance. Sites relating to the World War II attack on Pearl Harbor include the USS Arizona Memorial."
 ]
 var questChoiPoints = [{
-        questions: 'What kind of weather do you like?',
-        choices: [
-            'Warm but dry',
-            'Cold',
-            'Rainy and Brisk',
-            'Tropical and Sunny'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [1, 4, 2, 3, 3, 5],
-            secondChoice: [5, 2, 3, 0, 0, 5],
-            thirdChoice: [0, 3, 5, 3, 3, 0],
-            fourthChoice: [2, 3, 0, 4, 4, 5]
-        }]
-    },
-    {
-        questions: 'What kind of activities are you looking forward to?',
-        choices: [
-            'I want to visit places with history, museums, National Landmarks etc',
-            'I want to relax and enjoy my environment somewhere by the water',
-            'I want to do something exciting like sky dive, theme parks, scuba diving.',
-            "I'm going on vacation with family and want a variety of different attractions"
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [5, 4, 5, 2, 3, 4],
-            secondChoice: [2, 3, 1, 3, 2, 5],
-            thirdChoice: [2, 1, 3, 2, 4, 5],
-            fourthChoice: [2, 3, 4, 2, 5, 3]
-        }]
-    },
-    {
-        questions: 'What kind of shopping will you do once you get there?',
-        choices: [
-            "I don't plan on buying much I just want to see the sights!",
-            'I like fashion and want to shop at name brands and experience new trends.',
-            'I want to be able to buy historical souvenirs for my family from all the places and activities I visit.',
-            "I might shop if I find something cool but I'm not really planning on it."
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [3, 5, 3, 1, 2, 4],
-            secondChoice: [5, 0, 4, 3, 2, 1],
-            thirdChoice: [5, 4, 5, 2, 3, 1],
-            fourthChoice: [1, 5, 2, 3, 2, 4]
-        }]
-    },
-    {
-        questions: 'What kind of foods do you like?',
-        choices: [
-            'I like to try new things and a lot of variety.',
-            "I don't like a lot of excitement in my food, preferrably something bland.",
-            'I like spicy foods with a lot of flavor',
-            'I love baked goods for all occasions.'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [5, 2, 5, 4, 4, 3],
-            secondChoice: [3, 4, 5, 1, 5, 0],
-            thirdChoice: [0, 3, 2, 5, 3, 4],
-            fourthChoice: [5, 3, 4, 1, 3, 0]
-        }]
-    },
-    {
-        questions: 'How do you prefer to spend your free time?',
-        choices: [
-            'Hiking',
-            'Relaxing at the beach',
-            'Exploring the city',
-            'Visiting theme parks'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [1, 1, 1, 3, 2, 5],
-            secondChoice: [0, 0, 0, 5, 3, 5],
-            thirdChoice: [5, 5, 5, 3, 2, 1],
-            fourthChoice: [3, 2, 2, 1, 5, 1]
-        }]
-    },
-    {
-        questions: 'What gives you the biggest rush?',
-        choices: [
-            'Visiting museums and galleries',
-            'Diving',
-            'Tasting delicious food and Drinks',
-            'Riding rollercoasters'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [5, 5, 5, 2, 1, 1],
-            secondChoice: [0, 0, 0, 5, 1, 5],
-            thirdChoice: [5, 5, 5, 3, 1, 4],
-            fourthChoice: [3, 1, 2, 1, 5, 1]
-        }]
-    },
-    {
-        questions: "What's the perfect way to spend a day?",
-        choices: [
-            'Chasing waterfalls',
-            'Taking food and wine tasting tours',
-            'Visiting incredible parks with record-breaking rides',
-            "See as much of nature's beauty as possible"
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [0, 0, 0, 5, 1, 5],
-            secondChoice: [5, 5, 5, 3, 2, 0],
-            thirdChoice: [1, 1, 1, 0, 5, 0],
-            fourthChoice: [1, 1, 1, 4, 3, 5]
-        }]
+    questions: 'What kind of weather do you like?',
+    choices: [
+        'Warm but dry',
+        'Cold',
+        'Rainy and Brisk',
+        'Tropical and Sunny'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [1, 4, 2, 3, 3, 5],
+        secondChoice: [5, 2, 3, 0, 0, 5],
+        thirdChoice: [0, 3, 5, 3, 3, 0],
+        fourthChoice: [2, 3, 0, 4, 4, 5]
+    }]
+},
+{
+    questions: 'What kind of activities are you looking forward to?',
+    choices: [
+        'I want to visit places with history, museums, National Landmarks etc',
+        'I want to relax and enjoy my environment somewhere by the water',
+        'I want to do something exciting like sky dive, theme parks, scuba diving.',
+        "I'm going on vacation with family and want a variety of different attractions"
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [5, 4, 5, 2, 3, 4],
+        secondChoice: [2, 3, 1, 3, 2, 5],
+        thirdChoice: [2, 1, 3, 2, 4, 5],
+        fourthChoice: [2, 3, 4, 2, 5, 3]
+    }]
+},
+{
+    questions: 'What kind of shopping will you do once you get there?',
+    choices: [
+        "I don't plan on buying much I just want to see the sights!",
+        'I like fashion and want to shop at name brands and experience new trends.',
+        'I want to be able to buy historical souvenirs for my family from all the places and activities I visit.',
+        "I might shop if I find something cool but I'm not really planning on it."
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [3, 5, 3, 1, 2, 4],
+        secondChoice: [5, 0, 4, 3, 2, 1],
+        thirdChoice: [5, 4, 5, 2, 3, 1],
+        fourthChoice: [1, 5, 2, 3, 2, 4]
+    }]
+},
+{
+    questions: 'What kind of foods do you like?',
+    choices: [
+        'I like to try new things and a lot of variety.',
+        "I don't like a lot of excitement in my food, preferrably something bland.",
+        'I like spicy foods with a lot of flavor',
+        'I love baked goods for all occasions.'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [5, 2, 5, 4, 4, 3],
+        secondChoice: [3, 4, 5, 1, 5, 0],
+        thirdChoice: [0, 3, 2, 5, 3, 4],
+        fourthChoice: [5, 3, 4, 1, 3, 0]
+    }]
+},
+{
+    questions: 'How do you prefer to spend your free time?',
+    choices: [
+        'Hiking',
+        'Relaxing at the beach',
+        'Exploring the city',
+        'Visiting theme parks'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [1, 1, 1, 3, 2, 5],
+        secondChoice: [0, 0, 0, 5, 3, 5],
+        thirdChoice: [5, 5, 5, 3, 2, 1],
+        fourthChoice: [3, 2, 2, 1, 5, 1]
+    }]
+},
+{
+    questions: 'What gives you the biggest rush?',
+    choices: [
+        'Visiting museums and galleries',
+        'Diving',
+        'Tasting delicious food and Drinks',
+        'Riding rollercoasters'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [5, 5, 5, 2, 1, 1],
+        secondChoice: [0, 0, 0, 5, 1, 5],
+        thirdChoice: [5, 5, 5, 3, 1, 4],
+        fourthChoice: [3, 1, 2, 1, 5, 1]
+    }]
+},
+{
+    questions: "What's the perfect way to spend a day?",
+    choices: [
+        'Chasing waterfalls',
+        'Taking food and wine tasting tours',
+        'Visiting incredible parks with record-breaking rides',
+        "See as much of nature's beauty as possible"
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [0, 0, 0, 5, 1, 5],
+        secondChoice: [5, 5, 5, 3, 2, 0],
+        thirdChoice: [1, 1, 1, 0, 5, 0],
+        fourthChoice: [1, 1, 1, 4, 3, 5]
+    }]
 
-    },
-    {
-        questions: 'With whom will you be traveling?',
-        choices: [
-            'Family',
-            'Friends',
-            'Significant other',
-            'Alone'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [4, 2, 3, 4, 5, 5],
-            secondChoice: [5, 4, 5, 5, 2, 5],
-            thirdChoice: [5, 4, 4, 3, 1, 5],
-            fourthChoice: [5, 5, 5, 1, 3, 0]
-        }]
+},
+{
+    questions: 'With whom will you be traveling?',
+    choices: [
+        'Family',
+        'Friends',
+        'Significant other',
+        'Alone'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [4, 2, 3, 4, 5, 5],
+        secondChoice: [5, 4, 5, 5, 2, 5],
+        thirdChoice: [5, 4, 4, 3, 1, 5],
+        fourthChoice: [5, 5, 5, 1, 3, 0]
+    }]
 
-    },
-    {
-        questions: 'What would you be more afraid of:',
-        choices: [
-            'Stay on top of the mountains',
-            'See a shark at the beach',
-            'Creepy creatures',
-            'Historical horrors'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [5, 4, 3, 5, 5, 0],
-            secondChoice: [5, 4, 4, 0, 5, 0],
-            thirdChoice: [1, 1, 0, 4, 4, 3],
-            fourthChoice: [1, 0, 0, 4, 4, 3]
-        }]
-    },
-    {
-        questions: 'What is your preferred fruit among these:',
-        choices: [
-            'Pineapple',
-            'Orange',
-            'Mango',
-            'Apple'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [1, 3, 3, 2, 2, 5],
-            secondChoice: [3, 2, 2, 5, 5, 4],
-            thirdChoice: [2, 3, 1, 5, 4, 1],
-            fourthChoice: [5, 2, 3, 1, 3, 4]
-        }]
-    },
-    {
-        questions: 'What’s your biggest pet peeve?',
-        choices: [
-            'When your phone hits 1% and you left the charger at home',
-            'Slow walkers',
-            'Lack of exciting things to do',
-            'Large crowds'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [4, 3, 4, 4, 4, 1],
-            secondChoice: [2, 3, 3, 1, 1, 5],
-            thirdChoice: [4, 3, 4, 4, 5, 1],
-            fourthChoice: [3, 3, 3, 1, 1, 5]
-        }]
-    },
-    {
-        questions: 'What is on your bucket list?',
-        choices: [
-            'Experiencing a totally new culture',
-            'Scuba Diving',
-            'Leaving the map at home and completely losing yourself somewhere',
-            'To see ancient structures'
-        ],
-        points: [{
-            //points ordered as paris, rome, london, miami, orlando and honolulu
-            firstChoice: [3, 4, 3, 3, 3, 5],
-            secondChoice: [2, 2, 2, 5, 3, 5],
-            thirdChoice: [4, 4, 4, 2, 4, 1],
-            fourthChoice: [4, 5, 3, 1, 1, 2]
-        }]
-    }
+},
+{
+    questions: 'What would you be more afraid of:',
+    choices: [
+        'Stay on top of the mountains',
+        'See a shark at the beach',
+        'Creepy creatures',
+        'Historical horrors'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [5, 4, 3, 5, 5, 0],
+        secondChoice: [5, 4, 4, 0, 5, 0],
+        thirdChoice: [1, 1, 0, 4, 4, 3],
+        fourthChoice: [1, 0, 0, 4, 4, 3]
+    }]
+},
+{
+    questions: 'What is your preferred fruit among these:',
+    choices: [
+        'Pineapple',
+        'Orange',
+        'Mango',
+        'Apple'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [1, 3, 3, 2, 2, 5],
+        secondChoice: [3, 2, 2, 5, 5, 4],
+        thirdChoice: [2, 3, 1, 5, 4, 1],
+        fourthChoice: [5, 2, 3, 1, 3, 4]
+    }]
+},
+{
+    questions: 'What’s your biggest pet peeve?',
+    choices: [
+        'When your phone hits 1% and you left the charger at home',
+        'Slow walkers',
+        'Lack of exciting things to do',
+        'Large crowds'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [4, 3, 4, 4, 4, 1],
+        secondChoice: [2, 3, 3, 1, 1, 5],
+        thirdChoice: [4, 3, 4, 4, 5, 1],
+        fourthChoice: [3, 3, 3, 1, 1, 5]
+    }]
+},
+{
+    questions: 'What is on your bucket list?',
+    choices: [
+        'Experiencing a totally new culture',
+        'Scuba Diving',
+        'Leaving the map at home and completely losing yourself somewhere',
+        'To see ancient structures'
+    ],
+    points: [{
+        //points ordered as paris, rome, london, miami, orlando and honolulu
+        firstChoice: [3, 4, 3, 3, 3, 5],
+        secondChoice: [2, 2, 2, 5, 3, 5],
+        thirdChoice: [4, 4, 4, 2, 4, 1],
+        fourthChoice: [4, 5, 3, 1, 1, 2]
+    }]
+}
 ]
 var preparedQuestion = function () {
     $('.btn').remove();
@@ -361,7 +361,7 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
             break;
         case 4:
             window.location.replace('orlando.html');
-            var longitude =  81.3792;
+            var longitude = 81.3792;
             var latitude = 28.5383;
             break;
         case 5:
@@ -371,8 +371,8 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
             break;
     }
     var cityWeather = {
-        'lon':longitude,
-        'lat':latitude
+        'lon': longitude,
+        'lat': latitude
     }
     localStorage.setItem("cityToGo", JSON.stringify(cityWeather));
 }

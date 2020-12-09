@@ -1,418 +1,406 @@
 :root {
-    --primary: #1b262c;
-    --secondary: #0f4c75;
-    --tertiary: #3282b8;
-    --lightBlue: #bbe1fa;
+  --primary: #1b262c;
+  --secondary: #0f4c75;
+  --tertiary: #3282b8;
+  --lightBlue: #bbe1fa;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
-    overflow: hidden;
-    width: 100%;
+  overflow: hidden;
+  width: 100%;
 }
 
 .main-content {
-    width: 100%;
-    position: absolute;
-    opacity: 0;
-    animation: mainContentIn .2s 3s forwards;
+  width: 100%;
+  position: absolute;
+  opacity: 0;
+  animation: mainContentIn 0.2s 3s forwards;
 }
 
 @keyframes mainContentIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Preloader animations */
 .preloader {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #0168ae;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: moveIntro 3s 3s forwards;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0168ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveIntro 3s 3s forwards;
 }
 
 @keyframes moveIntro {
-    from {
-        transform: translateX(0px);
-        opacity: 1;
-    }
+  from {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 
-    to {
-        transform: translateX(3000px);
-        opacity: 0;
-    }
+  to {
+    transform: translateX(3000px);
+    opacity: 0;
+  }
 }
 
 /* Plane animation inspiration for Dev Ed Youtube */
 .cloud1,
 .cloud2,
 .cloud3 {
-    height: 100px;
-    position: absolute;
-    right: 0%;
-    z-index: -1;
+  height: 100px;
+  position: absolute;
+  right: 0%;
+  z-index: -1;
 }
 
 .cloud1 {
-    top: 25%;
-    transform: translate(100%, -25%);
-    animation: clouds 3s ease infinite;
+  top: 25%;
+  transform: translate(100%, -25%);
+  animation: clouds 3s ease infinite;
 }
 
 .cloud2 {
-    top: 50%;
-    transform: translate(100%, -50%);
-    animation: clouds 3s ease infinite 2s;
+  top: 50%;
+  transform: translate(100%, -50%);
+  animation: clouds 3s ease infinite 2s;
 }
 
 .cloud3 {
-    top: 75%;
-    transform: translate(100%, -75%);
-    animation: clouds 3s ease infinite 1.5s;
+  top: 75%;
+  transform: translate(100%, -75%);
+  animation: clouds 3s ease infinite 1.5s;
 }
 
 .airplane {
-    height: 200px;
-    animation: airplane 1s ease infinite alternate;
+  height: 200px;
+  animation: airplane 1s ease infinite alternate;
 }
 
 .preloader h3 {
-    position: absolute;
-    top: 75%;
-    transform: translateY(-75%);
-    color: white;
-    font-size: 30px;
-    font-family: sans-serif;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
 }
 
 @keyframes airplane {
-    from {
-        transform: translateY(0px);
-    }
+  from {
+    transform: translateY(0px);
+  }
 
-    to {
-        transform: translateY(50px);
-    }
+  to {
+    transform: translateY(50px);
+  }
 }
 
 @keyframes clouds {
-    from {
-        right: 0%;
-    }
+  from {
+    right: 0%;
+  }
 
-    to {
-        right: 140%;
-    }
+  to {
+    right: 140%;
+  }
 }
 
 /* end preloader */
 
-
 /* main styling */
 header img {
-    width: 60%;
-    padding: 10px;
+  width: 60%;
+  padding: 10px;
 }
 
 body {
-    background-color: var(--primary);
-    color: var(--lightBlue);
-    font-family: 'Castoro', serif;
+  background-color: var(--primary);
+  color: var(--lightBlue);
+  font-family: "Castoro", serif;
 }
 
 /* results html stylings */
 
 article p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .stats {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    align-items: center;
-    margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+  margin-top: 25px;
 }
 
 .row .col.l4 {
-    margin-left: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  margin-left: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .card {
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .cities img {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 /* Main content animations */
 .header {
-    font-family: 'Lobster', cursive;
-    animation-delay: 4.2s;
+  font-family: "Lobster", cursive;
+  animation-delay: 4.2s;
 }
 
 .img-city {
-    animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 .slideShow {
-    animation-delay: 4.7s;
+  animation-delay: 4.7s;
 }
 
 .city-description {
-    animation-delay: 4.9s;
+  animation-delay: 4.9s;
 }
 
 /* Results animations */
 .resultHeader {
-    animation-delay: .5s;
+  animation-delay: 0.5s;
 }
 
 .container {
-    margin-bottom: 100px;
-    padding-bottom: 15px;
+  margin-bottom: 100px;
+  padding-bottom: 15px;
 }
 
 .city-img {
-    animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 .result-info {
-    animation-delay: 1.2s;
+  animation-delay: 1.2s;
 }
 
 .answers {
-    animation-duration: 1.5s;
+  animation-duration: 1.5s;
 }
 
 /* widget syling */
 
 .widget {
-    margin-top: 100px;
-    background-color: var(--lightBlue);
-    width: 28%;
+  margin-top: 100px;
+  background-color: var(--lightBlue);
+  width: 28%;
 }
 
 /* button styling */
 .btn,
 .value {
-    color: var(--lightBlue);
-    opacity: 80%;
-    margin-top: 5px;
-    border-radius: 5px;
-    font-size: 24px;
-    font-weight: bolder;
-    background-color: var(--secondary);
-    transition: all .5s ease-out;
-    background-position: 0 -10px;
+  color: var(--lightBlue);
+  opacity: 80%;
+  margin-top: 5px;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: var(--secondary);
+  transition: all 0.5s ease-out;
+  background-position: 0 -10px;
 }
 
 .value {
-    height: 200px;
-    width: 500px;
-    font-size: 16px;
+  height: 200px;
+  width: 500px;
+  font-size: 16px;
 }
 
 .btn:hover,
 .value:hover {
-    background: rgb(80, 157, 218);
-    background: linear-gradient(180deg, rgba(80, 157, 218, 1) 0%, rgba(86, 97, 199, 1) 35%, rgba(112, 133, 198, 1) 100%);
-    background-position: 1px -25px;
+  background: rgb(80, 157, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(80, 157, 218, 1) 0%,
+    rgba(86, 97, 199, 1) 35%,
+    rgba(112, 133, 198, 1) 100%
+  );
+  background-position: 1px -25px;
 }
-
 
 /* footer styling */
 
 footer {
-    margin-top: 50px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 .question-image {
-    height: 300px;
-    width: 300px;
-    position: relative;
+  height: 300px;
+  width: 300px;
+  position: relative;
 }
 
 .cityName {
-    width: 500px;
+  width: 500px;
 }
 
 /* Media Queries  */
 @media screen and (max-width: 1789px) {
-    .widget {
-        display: flex;
-        align-content: center;
-        height: min-content;
-        width: min-content;
-    }
+  .widget {
+    display: flex;
+    align-content: center;
+    height: min-content;
+    width: min-content;
+  }
 }
 
 @media screen and (max-width: 980px) {
- 
-
-    .facts-container {
-        display: none;
-    }
+  .facts-container {
+    display: none;
+  }
 }
 
-
-    @media screen and (max-width: 768px) {
-
-        .stats {
-            margin-top: 100px;
-        }
-
-
-    }
-
-    @media screen and (max-width: 575px) {
-        .eachQuestion {
-            font-size: 28px;
-        }
-
-        .value {
-            font-size: 12px;
-            line-height: 24px;
-        }
-
-        .cities img {
-            height: 80%;
-            width: 80%;
-        }
-
-        article p {
-            font-size: 18px;
-        }
-
-        li {
-            font-size: 16px;
-        }
-    }
-
-    @media screen and (max-width: 500px) {
-        .widget {
-            display: none;
-        }
-
-        article p {
-            font-size: 16px;
-        }
-
-        li {
-            font-size: 17px;
-        }
-
-        #home h2 {
-            font-size: 28px;
-        }
-
-        .row .col.s6 {
-            width: 100%;
-
-
-        }
-
-        .row .col.offset-s3 {
-
-            margin-left: 0;
-        }
-
-        .row .btn {
-
-            margin: 10% 25%;
-        }
-
-        .eachQuestion {
-            text-align: center;
-            margin-top: 0;
-        }
-
-    .container {
-        margin-bottom: 0;
-
-
-    }
-
-    .result-info {
-
-        text-align: center;
-    }
-
-    
-    .city-description{
-        text-align: center;
-    }
-    .quizDesc{
-        text-align:center
-    }
+@media screen and (max-width: 768px) {
+  .stats {
+    margin-top: 100px;
+  }
+  .restart-btn {
+    height: 5rem;
+  }
+  .back-div a button {
+    font-size: 1rem;
+  }
 }
 
-    @media screen and (max-width: 438px) {
+@media screen and (max-width: 575px) {
+  .eachQuestion {
+    font-size: 28px;
+  }
 
-        .btn {
-            margin-top: 25px;
-            width: 175px;
-            font-size: 18px;
-        }
+  .value {
+    font-size: 12px;
+    line-height: 24px;
+  }
 
-        #home h2 {
-            font-size: 28px;
-        }
+  .cities img {
+    height: 80%;
+    width: 80%;
+  }
 
-        .row .btn {
+  article p {
+    font-size: 18px;
+  }
 
-            margin-left: 28%;
-        }
-      
-    }
+  li {
+    font-size: 16px;
+  }
+}
 
+@media screen and (max-width: 500px) {
+  .widget {
+    display: none;
+  }
 
+  article p {
+    font-size: 16px;
+  }
 
-    @media screen and (max-width: 350px) {
+  li {
+    font-size: 17px;
+  }
 
-        #home h2 {
-            font-size: 28px;
-        }
+  #home h2 {
+    font-size: 28px;
+  }
 
-        .row .btn {
+  .row .col.s6 {
+    width: 100%;
+  }
 
-            margin-left: 22%;
-        }
-.header{
+  .row .col.offset-s3 {
+    margin-left: 0;
+  }
+
+  .row .btn {
+    margin: 10% 25%;
+  }
+
+  .eachQuestion {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .container {
+    margin-bottom: 0;
+  }
+
+  .result-info {
+    text-align: center;
+  }
+
+  .city-description {
+    text-align: center;
+  }
+  .quizDesc {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 438px) {
+  .btn {
+    margin-top: 25px;
+    width: 175px;
+    font-size: 18px;
+  }
+
+  #home h2 {
+    font-size: 28px;
+  }
+
+  .row .btn {
+    margin-left: 28%;
+  }
+  .back-div a button {
+    width: 18vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #home h2 {
+    font-size: 28px;
+  }
+
+  .row .btn {
+    margin-left: 22%;
+  }
+  .header {
     font-size: 41px;
-
+  }
 }
-
-}
-    

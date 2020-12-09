@@ -373,7 +373,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 438px) {
+@media screen and (max-width: 440px) {
   .btn {
     margin-top: 25px;
     width: 175px;
@@ -388,7 +388,8 @@ footer {
     margin-left: 28%;
   }
   .back-div a button {
-    width: 18vh;
+    min-height: 7vh;
+    line-height: 20px;
   }
 }
 
@@ -402,5 +403,8 @@ footer {
   }
   .header {
     font-size: 41px;
+  }
+  .back-div a button {
+    width: 18vh;
   }
 }

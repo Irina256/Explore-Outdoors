@@ -45,7 +45,7 @@ var cityWeather = function (lat, lon, icon) {
             var weatherInfos = document.createElement('div');
             weatherInfos.classList = "col s6 m6 l4 z-depth-5 card cyan darken-3";
             var iconImg = document.createElement("img")
-            iconImg.setAttribute("src", "http://openweathermap.org/img/wn/" + icon + ".png");
+            iconImg.setAttribute("src", "https://openweathermap.org/img/wn/" + icon + ".png");
             weatherInfos.appendChild(iconImg);
             var tempP = document.createElement("p");
             tempP.textContent = 'Temperature: ' + temp + " F";

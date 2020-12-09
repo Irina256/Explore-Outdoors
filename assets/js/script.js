@@ -11,7 +11,7 @@ var cityCounter = 0;
 var carCounter = 0;
 var imagesSrc = [
     './assets/images/paris.jpg',
-    './assets/images/rome.jpg',
+    './assets/images/Rome.jpg',
     './assets/images/london-big-ben.jpg',
     './assets/images/miami.jpg',
     './assets/images/universal-ball-800x450-1.jpg',
@@ -341,30 +341,40 @@ var scoreReport = function (parisScore, romeScore, londonScore, miamiScore, orla
     switch (highScore) {
         case 0:
             window.location.replace('paris.html');
-            var city2Go = 'paris';
+            var longitude = 2.3522;
+            var latitude = 48.8566;
             break;
         case 1:
             window.location.replace('rome.html');
-            var city2Go = 'rome';
+            var longitude = 12.4964;
+            var latitude = 41.9028;
             break;
         case 2:
             window.location.replace('london.html');
-            var city2Go = 'london';
+            var longitude = 0.1278;
+            var latitude = 51.5074;
             break;
         case 3:
             window.location.replace('miami.html');
-            var city2Go = 'miami';
+            var longitude = 80.1918;
+            var latitude = 25.7617;
             break;
         case 4:
             window.location.replace('orlando.html');
-            var city2Go = 'orlando';
+            var longitude =  81.3792;
+            var latitude = 28.5383;
             break;
         case 5:
             window.location.replace('honolulu.html');
-            var city2Go = 'honolulu';
+            var longitude = 157.8583;
+            var latitude = 21.3069;
             break;
     }
-    (localStorage.setItem("cityToGo", city2Go));
+    var cityWeather = {
+        'lon':longitude,
+        'lat':latitude
+    }
+    localStorage.setItem("cityToGo", JSON.stringify(cityWeather));
 }
 var imageCity = document.querySelector('.img-city');
 var cityDetails = document.querySelector('.city-description');

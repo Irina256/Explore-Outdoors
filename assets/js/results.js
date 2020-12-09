@@ -3,10 +3,11 @@ var apiKeyGeo = 'c80e9673c97a49c7927cee985eb54a1b';
 const userFrom = function (location) {
     var latitude = location.coords.latitude;
     var longitude = location.coords.longitude;
-    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKeyGeo}`)
+    fetch(`https://api.opencagedata.com/geocode/v1/json?q=${latitude}&${longitude}&key=${apiKeyGeo}`)
         .then(function (response) {
             response.json()
                 .then(function (data) {
+                    console.log(data)
                     var userCity = data.results[0].components.city;
                     localStorage.setItem("userCity", userCity);
                     var userLocation = $('#skyScanner');
@@ -16,16 +17,19 @@ const userFrom = function (location) {
 };
 navigator.geolocation.getCurrentPosition(userFrom);
 var cityTwoGo = function () {
-    var city2Go = localStorage.getItem("cityToGo");
-    console.log(city2Go);
-    var cityApi = `https://api.openweathermap.org/data/2.5/weather?q=${city2Go}&appid=${apiKey}`
+    var city2Go = JSON.parse(localStorage.getItem("cityToGo"));
+    var lati = city2Go.lat;
+    var longi = city2Go.lon;
+    console.log(longi);
+    console.log(lati);
+    var cityApi = `https://api.openweathermap.org/data/2.5/weather?lat=${lati}&lon=${longi}&appid=${apiKey}`;
     fetch(cityApi).then(function (response) {
         response.json().then(function (data) {
             console.log(data);
-            var longitude = data.coord['lon'];
-            var latitude = data.coord['lat'];
+            // var longitude = data.coord['lon'];
+            // var latitude = data.coord['lat'];
             var icon = data.weather[0].icon;
-            cityWeather(latitude, longitude, icon);
+            cityWeather(lati, longi, icon);
         });
     });
 }
@@ -40,27 +44,19 @@ var cityWeather = function (lat, lon, icon) {
             var weatherInfo = document.querySelector('.stats');
             var weatherInfos = document.createElement('div');
             weatherInfos.classList = "col s6 m6 l4 z-depth-5 card cyan darken-3";
-
             var iconImg = document.createElement("img")
             iconImg.setAttribute("src", "http://openweathermap.org/img/wn/" + icon + ".png");
             weatherInfos.appendChild(iconImg);
-
             var tempP = document.createElement("p");
             tempP.textContent = 'Temperature: ' + temp + " F";
             weatherInfos.appendChild(tempP);
-
             var humP = document.createElement("p");
             humP.textContent = 'Humidity: ' + humidity + "%";
             weatherInfos.appendChild(humP);
-
             var windP = document.createElement("p");
             windP.textContent = 'Wind Speed: ' + windSpeed + " MPH";
             weatherInfos.appendChild(windP);
-
             weatherInfo.appendChild(weatherInfos);
-            console.log(temp);
-            console.log(humidity);
-            console.log(windSpeed);
         })
     })
 }
